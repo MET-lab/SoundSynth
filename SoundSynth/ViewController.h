@@ -31,9 +31,9 @@
     IBOutlet METScopeView *tdScopeView;
     NSTimer *tdUpdateClock;
     
-    UISegmentedControl *drawSelector;
-    UIButton *finishDrawingButton;
-    FunctionDrawView *drawView;
+//    UISegmentedControl *drawSelector;
+//    UIButton *finishDrawingButton;
+//    FunctionDrawView *drawView;
     int envLength;
     float *drawnEnvelope;
     int wavetableLength;
@@ -67,5 +67,9 @@
     
     IBOutlet UISwitch *outputEnableSwitch;
 }
+
+@property (strong, nonatomic) FunctionDrawView *drawView;
+@property (strong, nonatomic) UIButton *finishDrawingButton;
+@property (strong, nonatomic) UISegmentedControl *drawSelector;
 
 @end

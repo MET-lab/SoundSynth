@@ -1188,7 +1188,7 @@
 /* Query the number of plot subviews */
 - (int)getNumberOfPlots {
     
-    return plotDataSubviews.count;
+    return (int)plotDataSubviews.count;
 }
 - (int)getNumberOfVisiblePlots {
     
@@ -1218,7 +1218,7 @@
     [plotDataSubviews addObject:newSub];
     [self addSubview:newSub];
     
-    return (plotDataSubviews.count - 1);
+    return ((int)plotDataSubviews.count - 1);
 }
 
 /* Set the plot data for a subview at a specified index */

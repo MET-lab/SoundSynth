@@ -97,7 +97,7 @@
 //        previousIdx = waveTableIdx != 0 ? waveTableIdx-1 : waveTableLength-1;
         
         buffer[i] = waveTable[(int)roundf((theta / (2*M_PI)) * waveTableLength)];
-        
+
         if (env) {
             /* Envelope */
             buffer[i] *= env[envIdx];

@@ -96,10 +96,10 @@ static OSStatus outputRenderCallback(void *inRefCon, // Reference to the calling
     
     NSLog(@"%s", __PRETTY_FUNCTION__);
     NSLog(@"inputAvailable = %s", _audioSession.inputAvailable ? "true" : "false");
-    NSLog(@"maximumInputNumberOfChannels = %d", _audioSession.maximumInputNumberOfChannels);
-    NSLog(@"maximumOutputNumberOfChannels = %d", _audioSession.maximumOutputNumberOfChannels);
-    NSLog(@"audioSession.outputNumberOfChannels = %d", _audioSession.outputNumberOfChannels);
-    NSLog(@"audioSession.inputNumberOfChannels  = %d", _audioSession.inputNumberOfChannels);
+    NSLog(@"maximumInputNumberOfChannels = %ld", (long)_audioSession.maximumInputNumberOfChannels);
+    NSLog(@"maximumOutputNumberOfChannels = %ld", (long)_audioSession.maximumOutputNumberOfChannels);
+    NSLog(@"audioSession.outputNumberOfChannels = %ld", (long)_audioSession.outputNumberOfChannels);
+    NSLog(@"audioSession.inputNumberOfChannels  = %ld", (long)_audioSession.inputNumberOfChannels);
     NSLog(@"audioSession.sampleRate             = %f", _audioSession.sampleRate);
     NSLog(@"audioSession.IOBufferDuration       = %f", _audioSession.IOBufferDuration);
     NSLog(@"bufferSizeFrames                    = %d", (unsigned int)_bufferSizeFrames);
@@ -155,7 +155,7 @@ static OSStatus outputRenderCallback(void *inRefCon, // Reference to the calling
     /* ----------------------- */
     
     /* Get the ASBD for the remote IO unit */
-    size_t asbdSize = sizeof(AudioStreamBasicDescription);
+    UInt32 asbdSize = sizeof(AudioStreamBasicDescription);
     AudioStreamBasicDescription asbd = {0};
     AudioUnitGetProperty(_outputUnit,
                          kAudioUnitProperty_StreamFormat,

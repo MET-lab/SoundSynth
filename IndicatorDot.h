@@ -14,11 +14,12 @@
 
 @property METScopeView *parentView;
 @property (readonly) CGPoint position;
-@property UIColor *dotColor;
-@property bool visible;
+@property (retain) UIColor *dotColor;
+@property (readonly) bool visible;
 
 - (id)initWithParent:(METScopeView *)parent size:(CGSize)size pos:(CGPoint)pos color:(UIColor *)color;
 
 - (void)setPosition:(CGPoint)pos;
+- (void)setVisible:(bool)visible;
 
 @end

@@ -14,6 +14,10 @@
 
 @implementation ViewController
 
+@synthesize drawView;
+@synthesize finishDrawingButton;
+@synthesize drawSelector;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -52,7 +56,8 @@
     
     CGRect frame = tdScopeView.frame;
     frame.size.width -= 20;
-    drawView = [[FunctionDrawView alloc] initWithFrame:tdScopeView.frame];
+    FunctionDrawView *dv = [[FunctionDrawView alloc] initWithFrame:tdScopeView.frame];
+    [self setDrawView:dv];
     drawingEnvelope = drawingWaveform = false;
     
     /* -------------------- */
@@ -170,22 +175,25 @@
     /* ---------------------- */
     
     NSArray *options = @[@"Draw Waveform", @"Draw Envelope"];
-    drawSelector = [[UISegmentedControl alloc] initWithItems:options];
-    [drawSelector addTarget:self action:@selector(beginDrawing:) forControlEvents:UIControlEventValueChanged];
-    frame = drawSelector.frame;
+    UISegmentedControl *ds = [[UISegmentedControl alloc] initWithItems:options];
+    [ds addTarget:self action:@selector(beginDrawing:) forControlEvents:UIControlEventValueChanged];
+    frame = ds.frame;
     frame.origin.x += tdScopeView.frame.size.width - frame.size.width;
-    [drawSelector setFrame:frame];
+    [ds setFrame:frame];
+    [self setDrawSelector:ds];
     [tdScopeView addSubview:drawSelector];
     
     frame.size.width = 100;
     frame.origin.x = tdScopeView.frame.size.width - frame.size.width - 6;
     frame.origin.y += 6;
-    finishDrawingButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [[finishDrawingButton layer] setBorderWidth:2.0f];
-    [[finishDrawingButton layer] setBorderColor:[UIColor blueColor].CGColor];
-    [finishDrawingButton setFrame:frame];
-    [finishDrawingButton setTitle:@"Done" forState:UIControlStateNormal];
-    [finishDrawingButton addTarget:self action:@selector(endDrawing) forControlEvents:UIControlEventTouchUpOutside | UIControlEventTouchUpInside];
+    UIButton *fdb = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [[fdb layer] setBorderWidth:2.0f];
+    [[fdb layer] setBorderColor:[UIColor blueColor].CGColor];
+    [fdb setFrame:frame];
+    [fdb setTitle:@"Done" forState:UIControlStateNormal];
+    [fdb addTarget:self action:@selector(endDrawing) forControlEvents:UIControlEventTouchUpInside];
+    [self setFinishDrawingButton:fdb];
+    [[self drawView] addSubview:finishDrawingButton];
     
     /* -------------------------------- */
     /* == Harmonic Amplitude Presets == */
@@ -355,9 +363,8 @@
     [tdScopeView setAlpha:0.5];
     [[self view] addSubview:drawView];
     
-    /* Remove the draw buttons from the plot while drawing; add the finish button */
+    /* Remove the draw buttons from the plot while drawing; */
     [drawSelector removeFromSuperview];
-    [drawView addSubview:finishDrawingButton];
     
     /* Disable the output enable switch and fundamental slider while drawing */
     [outputEnableSwitch setEnabled:false];
@@ -369,9 +376,13 @@
     /* If we drew a waveform, sample it and send it to the wavetable synth */
     if (drawingWaveform) {
         [self sampleDrawnWaveform];
-        [aSynth setEnabled:false];
-        [wSynth setEnabled:true];
         drawnWaveform = false;
+        
+        if ([aSynth enabled]) {
+            [aSynth setEnabled:false];
+            [wSynth setEnabled:true];
+            [self setIndicatorDotsVisible:false];
+        }
     }
     
     /* If we drew an amplitude envelope, sample and set it on the additive and wavetable synths */
@@ -381,16 +392,15 @@
     }
     
     /* Remove the function draw view */
+    [[self drawView] removeFromSuperview];
+    
+    /* Put the segmented control back */
     [tdScopeView setAlpha:1.0];
-    [drawView removeFromSuperview];
+    [tdScopeView addSubview:[self drawSelector]];
     
     /* Set the time domain plot bounds to their original values before the tap */
     [tdScopeView setVisibleXLim:oldXMin max:oldXMax];
     [tdScopeView setPlotUnitsPerXTick:oldXGridScale];
-    
-    /* Remove the finish button; put the segmented control back */
-    [tdScopeView addSubview:drawSelector];
-    [finishDrawingButton removeFromSuperview];
  
     /* Re-enable disabled interface controls */
     [outputEnableSwitch setEnabled:true];
@@ -430,7 +440,7 @@
     
     /* Get a number of samples from the drawn waveform sufficient to represent the highest possible fundamental frequency */
     float upsampleFactor = fundamentalSlider.maximumValue / fundamentalSlider.value;
-    wavetableLength = (int)(drawView.length * upsampleFactor * 3.0);
+    wavetableLength = (int)(drawView.length * upsampleFactor * 3.0); // *3.0 is a hack
     
     /* Add a few extra samples to interpolate between starting and end points to smooth out discontinuities */
     wavetableLength += kWavetablePadLength;
@@ -439,34 +449,37 @@
         free(drawnWaveform);
     
     drawnWaveform = (float *)malloc(wavetableLength * sizeof(float));
-    [drawView getDrawingWithLength:wavetableLength pixelVals:drawnWaveform];
+    [drawView getDrawingWithLength:wavetableLength-kWavetablePadLength pixelVals:drawnWaveform];
     
     /* Convert pixel values to plot units */
     CGPoint p;
     for (int i = 0; i < wavetableLength-kWavetablePadLength; i++) {
-        
         p = [tdScopeView pixelToPlotScale:CGPointMake((CGFloat)i, drawnWaveform[i])withOffset:tdScopeView.frame.origin];
         drawnWaveform[i] = p.y;
     }
     
-    /* Interpolate the extra samples ensuring continuity between the wave period's endpoints */
-    float *wavetablePad = (float *)malloc(kWavetablePadLength * sizeof(float));
-    [self linspace:drawnWaveform[wavetableLength-kWavetablePadLength-1]
-               max:drawnWaveform[0]
-       numElements:kWavetablePadLength
-             array:wavetablePad];
-    for (int i = 0; i < kWavetablePadLength; i++)
-        drawnWaveform[wavetableLength-kWavetablePadLength-1+i] = wavetablePad[i];
+    int sampOffset = 2;
     
-    printf("\n\nwavetable = [");
-    for (int i = 0; i < wavetableLength-1; i++)
-        printf("%f, ", drawnWaveform[i]);
-    printf("%f]", drawnWaveform[wavetableLength-1]);
+    /* Interpolate the extra samples ensuring continuity between the wave period's endpoints */
+    float *wavetablePad = (float *)malloc(kWavetablePadLength+sampOffset * sizeof(float));
+    [self linspace:drawnWaveform[wavetableLength-kWavetablePadLength-sampOffset]
+               max:drawnWaveform[0]
+       numElements:kWavetablePadLength+sampOffset
+             array:wavetablePad];
+    
+    
+//    printf("\n\nwavetableLength = %d\n", wavetableLength);
+//    printf("wavetablePad = ");
+    for (int i = 0; i < kWavetablePadLength+sampOffset; i++) {
+//        printf("%f ", wavetablePad[i]);
+        drawnWaveform[wavetableLength-kWavetablePadLength-sampOffset+i] = wavetablePad[i];
+    }
+    
+//    printf("\n\nwavetable:\n");
+//    for (int i = 0; i < wavetableLength; i++)
+//        printf("wt[%d] = %f\n", i, drawnWaveform[i]);
     
     [wSynth setWaveTable:drawnWaveform length:wavetableLength];
-    
-    /* Hide the indicator dots */
-    [self setIndicatorDotsVisible:false];
 }
 
 
@@ -499,6 +512,21 @@
     
     /* Update the associated harmonic amplitude */
     if (harmonicNum <= kNumHarmonics) {
+        
+        /* If the wavetable synth is active, go back to the additive synth */
+        if ([wSynth enabled]) {
+            [wSynth setEnabled:false];
+            [aSynth setEnabled:true];
+            [self setIndicatorDotsVisible:true];
+        }
+        
+        /* Find the "Manual" item and select it */
+        for (int i = 0; i < [presetSelector numberOfSegments]; i++) {
+            if ([[presetSelector titleForSegmentAtIndex:i] isEqualToString:@"Manual"]) {
+                [presetSelector setSelectedSegmentIndex:i];
+                previouslySelectedPreset = i;
+            }
+        }
         
         IndicatorDot *dot = [indicatorDots valueForKey:[NSString stringWithFormat:@"%d", harmonicNum]];
         
@@ -553,9 +581,6 @@
         [ampValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
         [ampValueLabel setTextAlignment:NSTextAlignmentRight];
         [infoView addSubview:ampValueLabel];
-        
-        [presetSelector setSelectedSegmentIndex:3];
-        previouslySelectedPreset = 3;
     }
     
     /* If we're updating the noise amplitude, create a slightly different parameter view */
@@ -645,19 +670,11 @@
         [dot setPosition:newPos];
     }
     
-    /* Update the noise amplitude */
-    else
-        [aSynth setNoiseAmplitude:linearAmp];
-    
-    /* If the wavetable synth is active, go back to the additive synth */
-    if ([wSynth enabled]) {
-        [wSynth setEnabled:false];
-        [aSynth setEnabled:true];
-        [self setIndicatorDotsVisible:true];
-    }
-    
     /* Otherwise we're updating the noise amplitude */
-    else if (harmonicNum == kNumHarmonics+1) {
+    else { // if (harmonicNum == kNumHarmonics+1) {
+        
+        /* Update the noise amplitude */
+        [aSynth setNoiseAmplitude:linearAmp];
         
         CGRect infoViewFrame;
         infoViewFrame.size.height = 100.0;
@@ -782,10 +799,12 @@
         linearAmp = powf(10, h[i]/20.0);
         
         if (i < kNumHarmonics) {
+    
+            printf("h[%d] = %f\n", i, h[i]);
             
             /* Update the sliders */
             UISlider *slider = [harmonicSliders objectForKey:[NSString stringWithFormat:@"%d", i+1]];
-            [slider setValue:h[i] animated:true];
+            [slider setValue:h[i] animated:false];
             
             /* Update the indicator dot */
             IndicatorDot *dot = [indicatorDots valueForKey:[NSString stringWithFormat:@"%d", i+1]];
@@ -938,7 +957,6 @@
         
         IndicatorDot *dot = [indicatorDots valueForKey:[NSString stringWithFormat:@"%d", i+1]];
         [dot setVisible:visible];
-        [dot setNeedsDisplay];
     }
 }
 

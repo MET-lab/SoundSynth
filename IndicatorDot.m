@@ -69,5 +69,10 @@
     [self setNeedsDisplay];
 }
 
+- (void)setVisible:(bool)isVisible {
+    visible = isVisible;
+    [self setNeedsDisplay];
+}
+
 
 @end
