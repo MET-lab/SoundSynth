@@ -26,6 +26,7 @@
     float target_f_0;           // Target fundamental freq
     float f_0_step;             // Ramp value (per sample) to add to fundamental
     
+    float a_n;                  // Noise amplitude
     float theta;                // Phase
     float thetaInc;             // Phase increment
     
@@ -41,6 +42,7 @@
 - (id)initWithSampleRate:(double)fs maxFreq:(float)f0Max;
 - (void)setWaveTable:(float *)table length:(int)len;
 - (void)setFundamental:(float)f0;
+- (void)setNoiseAmplitude:(float)amp;
 - (void)setAmplitudeEnvelope:(float *)amp length:(int)len;
 - (int)renderOutputBufferMono:(float *)buffer outNumberFrames:(int)nFrames;
 

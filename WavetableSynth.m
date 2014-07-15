@@ -58,6 +58,10 @@
     f_0_step = (target_f_0 - f_0) / (0.1 * f_s);
 }
 
+- (void)setNoiseAmplitude:(float)amp {
+    a_n = amp;
+}
+
 - (void)setAmplitudeEnvelope:(float *)amp length:(int)len {
     
     if (env)
@@ -96,7 +100,10 @@
 //        }
 //        previousIdx = waveTableIdx != 0 ? waveTableIdx-1 : waveTableLength-1;
         
-        buffer[i] = waveTable[(int)roundf((theta / (2*M_PI)) * waveTableLength)];
+        /* Noise */
+        buffer[i] = a_n * [self generateAWGN];
+        
+        buffer[i] += waveTable[(int)roundf((theta / (2*M_PI)) * waveTableLength)];
 
         if (env) {
             /* Envelope */
@@ -121,6 +128,37 @@
     [lpf filterContiguousData:buffer numFrames:nFrames channel:0];
     
     return phaseZeroIdx;
+}
+
+/* Generates additive white Gaussian Noise samples from the standard normal distribution (borrowed from http://www.embeddedrelated.com/showcode/311.php) */
+- (float)generateAWGN {
+    
+    float temp1;
+    float temp2 = 0.0;
+    float result;
+    int p;
+    
+    p = 1;
+    
+    while( p > 0 ) {
+        
+        temp2 = (rand() / ((float)RAND_MAX));   /*  rand() function generates an
+                                                 integer between 0 and  RAND_MAX,
+                                                 which is defined in stdlib.h.
+                                                 */
+        // temp2 is >= (RAND_MAX / 2)
+        if (temp2 == 0)
+            p = 1;
+        
+        // temp2 is < (RAND_MAX / 2)
+        else
+            p = -1;
+    }
+    
+    temp1 = cos((2.0 * (float)M_PI ) * rand() / ((float)RAND_MAX));
+    result = sqrt(-2.0 * log(temp2)) * temp1;
+    
+    return result;
 }
 
 /* Generate a linearly-spaced set of indices for sampling an incoming waveform */

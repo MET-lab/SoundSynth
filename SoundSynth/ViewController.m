@@ -14,10 +14,6 @@
 
 @implementation ViewController
 
-@synthesize drawView;
-@synthesize finishDrawingButton;
-@synthesize drawSelector;
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -28,6 +24,8 @@
 {
     [super viewDidLoad];
     [[self view] setBackgroundColor:[UIColor whiteColor]];
+    
+    CGRect frame;   // Reusable frame
     
     /* ----------------- */
     /* == Audio Setup == */
@@ -52,13 +50,47 @@
     [tdScopeView setYLabelPosition:kMETScopeViewYLabelsOutsideLeft];
     
     [tdScopeView addPlotWithColor:[UIColor blueColor] lineWidth:2.0];
-    [self setTDScopeUpdateRate:0.002];
+    [self setTDScopeUpdateRate:kPlotUpdateRate];
     
-    CGRect frame = tdScopeView.frame;
-    frame.size.width -= 20;
-    FunctionDrawView *dv = [[FunctionDrawView alloc] initWithFrame:tdScopeView.frame];
-    [self setDrawView:dv];
+    tdHold = false;
+    
+    /* ---------------------- */
+    /* == Drawing selector == */
+    /* ---------------------- */
+    
+    NSArray *options = @[@"Draw Waveform", @"Draw Envelope"];
+    drawSelector = [[UISegmentedControl alloc] initWithItems:options];
+    [drawSelector addTarget:self action:@selector(beginDrawing:) forControlEvents:UIControlEventValueChanged];
+    frame = drawSelector.frame;
+    frame.origin.x += tdScopeView.frame.size.width - frame.size.width;
+    [drawSelector setFrame:frame];
+    [tdScopeView addSubview:drawSelector];
+    
+    /* --------------------- */
+    /* == Draw View Setup == */
+    /* --------------------- */
+    
+    frame = tdScopeView.frame;
+    frame.size.width -= kWavetablePadLength;     // Don't go to edge of screen. Touches will be missed.
+    drawView = [[FunctionDrawView alloc] initWithFrame:frame];
     drawingEnvelope = drawingWaveform = false;
+    
+    /* Done drawing button */
+    frame.size.height = 40;
+    frame.size.width = 100;
+    frame.origin.x = tdScopeView.frame.size.width - frame.size.width - 6;
+    frame.origin.y = 6;
+    finishDrawingButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [finishDrawingButton setBackgroundColor:[UIColor whiteColor]];
+    [[finishDrawingButton layer] setBorderWidth:1.0f];
+    [[finishDrawingButton layer] setBorderColor:[[UIColor blueColor] colorWithAlphaComponent:0.1f].CGColor];
+    [finishDrawingButton setFrame:frame];
+    [finishDrawingButton setTitle:@"Done" forState:UIControlStateNormal];
+    [finishDrawingButton addTarget:self action:@selector(endDrawing) forControlEvents:UIControlEventTouchUpInside];
+    [drawView addSubview:finishDrawingButton];
+    
+    [[self view] addSubview:drawView];
+    [drawView setHidden:true];
     
     /* -------------------- */
     /* == FD Scope Setup == */
@@ -81,7 +113,28 @@
     
     [fdScopeView setDelegate:self];
     [fdScopeView addPlotWithColor:[UIColor blueColor] lineWidth:2.0];
-    [self setFDScopeUpdateRate:0.002];
+    [self setFDScopeUpdateRate:kPlotUpdateRate];
+    
+    fdHold = false;
+    
+    /* -------------------------------- */
+    /* == Harmonic Amplitude Presets == */
+    /* -------------------------------- */
+    
+    NSArray *presets = @[@"Sine", @"Square", @"Saw", @"Manual"];
+    presetSelector = [[UISegmentedControl alloc] initWithItems:presets];
+    [presetSelector addTarget:self action:@selector(setHarmonicPreset:) forControlEvents:UIControlEventValueChanged];
+    frame = presetSelector.frame;
+    frame.origin.x += fdScopeView.frame.size.width - frame.size.width;
+    [presetSelector setFrame:frame];
+    [presetSelector setSelectedSegmentIndex:0];
+    previouslySelectedPreset = [presetSelector selectedSegmentIndex];
+    [fdScopeView addSubview:presetSelector];
+    
+    previousHarmonics[0] = -6.0;
+    for (int i = 1; i < kNumHarmonics; i++) {
+        previousHarmonics[i] = -80.0;
+    }
     
     /* --------------------------- */
     /* == Harmonic Slider Array == */
@@ -149,6 +202,85 @@
         [indicatorDots setObject:dot forKey:[NSString stringWithFormat:@"%d", i+1]];
     }
     
+    /* -------------------------------------- */
+    /* == Harmonic/Noise Information Views == */
+    /* -------------------------------------- */
+    
+    /* Create the harmonic parameter info view */
+    frame.size.height = 70.0;
+    frame.size.width = 200.0;
+    frame.origin.y = 0.0;
+    frame.origin.x = 0.0;
+    
+    harmonicInfoView = [[UIView alloc] initWithFrame:frame];
+    [harmonicInfoView setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.8f]];
+    [[harmonicInfoView layer] setBorderWidth:1.0f];
+    [[harmonicInfoView layer] setBorderColor:[[UIColor blueColor] colorWithAlphaComponent:0.1f].CGColor];
+    [fdScopeView addSubview:harmonicInfoView];
+    
+    /* Add the parameter labels */
+    frame.origin.x = 5;
+    frame.origin.y = 5;
+    frame.size.width = 90;
+    frame.size.height = 30;
+    
+    freqParamLabel = [[UILabel alloc] initWithFrame:frame];
+    [freqParamLabel setText:@"Frequency: "];
+    [harmonicInfoView addSubview:freqParamLabel];
+    
+    frame.origin.y += frame.size.height;
+    ampParamLabel = [[UILabel alloc] initWithFrame:frame];
+    [ampParamLabel setText:@"Amplitude: "];
+    [harmonicInfoView addSubview:ampParamLabel];
+
+    /* And their values */
+    frame.origin.y -= frame.size.height;
+    frame.origin.x += frame.size.width;
+    freqValueLabel = [[UILabel alloc] initWithFrame:frame];
+    [freqValueLabel setText:[NSString stringWithFormat:@"%5.1f Hz", 0.0f]];
+    [freqValueLabel setTextAlignment:NSTextAlignmentRight];
+    [harmonicInfoView addSubview:freqValueLabel];
+    
+    frame.origin.y += frame.size.height;
+    ampValueLabel = [[UILabel alloc] initWithFrame:frame];
+    [ampValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", 0.0f]];
+    [ampValueLabel setTextAlignment:NSTextAlignmentRight];
+    [harmonicInfoView addSubview:ampValueLabel];
+    
+    [harmonicInfoView setHidden:true];      // Hide until harmonic sliders change
+    
+    /* Noise info view */
+    frame.size.height = 70.0;
+    frame.size.width = 150.0;
+    frame.origin.y = 0.0;
+    frame.origin.x = 0.0;
+    
+    noiseInfoView = [[UIView alloc] initWithFrame:frame];
+    [noiseInfoView setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.8f]];
+    [[noiseInfoView layer] setBorderWidth:1.0f];
+    [[noiseInfoView layer] setBorderColor:[[UIColor blueColor] colorWithAlphaComponent:0.1f].CGColor];
+    [fdScopeView addSubview:noiseInfoView];
+    
+    /* Add the parameter label */
+    frame.origin.x = 5;
+    frame.origin.y = 5;
+    frame.size.width = 135;
+    frame.size.height = 30;
+    
+    noiseAmpParamLabel = [[UILabel alloc] initWithFrame:frame];
+    [noiseAmpParamLabel setText:@"Noise Amplitude: "];
+    [noiseAmpParamLabel setTextAlignment:NSTextAlignmentRight];
+    [noiseInfoView addSubview:noiseAmpParamLabel];
+    
+    /* And its value */
+    frame.origin.y += frame.size.height;
+    noiseAmpValueLabel = [[UILabel alloc] initWithFrame:frame];
+    [noiseAmpValueLabel setText:[NSString stringWithFormat:@"%5.1f dB", 0.0f]];
+    [noiseAmpValueLabel setTextAlignment:NSTextAlignmentRight];
+    [noiseInfoView addSubview:noiseAmpValueLabel];
+    
+    [noiseInfoView setHidden:true];     // Hide until noise slider changes
+    
     /* ----------------- */
     /* == Synth Setup == */
     /* ----------------- */
@@ -169,50 +301,6 @@
     
     /* Fundamental frequency label */
     [fundamentalLabel setText:[NSString stringWithFormat:@"%5.1f", fundamentalSlider.value]];
-    
-    /* ---------------------- */
-    /* == Drawing selector == */
-    /* ---------------------- */
-    
-    NSArray *options = @[@"Draw Waveform", @"Draw Envelope"];
-    UISegmentedControl *ds = [[UISegmentedControl alloc] initWithItems:options];
-    [ds addTarget:self action:@selector(beginDrawing:) forControlEvents:UIControlEventValueChanged];
-    frame = ds.frame;
-    frame.origin.x += tdScopeView.frame.size.width - frame.size.width;
-    [ds setFrame:frame];
-    [self setDrawSelector:ds];
-    [tdScopeView addSubview:drawSelector];
-    
-    frame.size.width = 100;
-    frame.origin.x = tdScopeView.frame.size.width - frame.size.width - 6;
-    frame.origin.y += 6;
-    UIButton *fdb = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [[fdb layer] setBorderWidth:2.0f];
-    [[fdb layer] setBorderColor:[UIColor blueColor].CGColor];
-    [fdb setFrame:frame];
-    [fdb setTitle:@"Done" forState:UIControlStateNormal];
-    [fdb addTarget:self action:@selector(endDrawing) forControlEvents:UIControlEventTouchUpInside];
-    [self setFinishDrawingButton:fdb];
-    [[self drawView] addSubview:finishDrawingButton];
-    
-    /* -------------------------------- */
-    /* == Harmonic Amplitude Presets == */
-    /* -------------------------------- */
-    
-    NSArray *presets = @[@"Sine", @"Square", @"Saw", @"Manual"];
-    presetSelector = [[UISegmentedControl alloc] initWithItems:presets];
-    [presetSelector addTarget:self action:@selector(setHarmonicPreset:) forControlEvents:UIControlEventValueChanged];
-    frame = presetSelector.frame;
-    frame.origin.x += fdScopeView.frame.size.width - frame.size.width;
-    [presetSelector setFrame:frame];
-    [presetSelector setSelectedSegmentIndex:0];
-    previouslySelectedPreset = [presetSelector selectedSegmentIndex];
-    [fdScopeView addSubview:presetSelector];
-    
-    previousHarmonics[0] = -6.0;
-    for (int i = 1; i < kNumHarmonics; i++) {
-        previousHarmonics[i] = -80.0;
-    }
     
     /* ----------------- */
     /* == Start audio == */
@@ -257,6 +345,9 @@
 }
 
 - (void)updateTDScope {
+    
+    if (tdHold)
+        return;
     
     /* Extend the time duration we're retrieving from the recording buffer to compensate for the phaze zero offset. Lower fundamental frequencies have larger offsets due to longer wavelengths. */
     float periodsInView = (tdScopeView.visiblePlotMax.x-tdScopeView.visiblePlotMin.x) * aSynth.f_0;
@@ -305,6 +396,9 @@
 }
 
 - (void)updateFDScope {
+    
+    if (fdHold)
+        return;
     
     int length = audioOutput.bufferSizeFrames;
     
@@ -361,14 +455,17 @@
     
     /* Place the FunctionDrawView over the time domain scope */
     [tdScopeView setAlpha:0.5];
-    [[self view] addSubview:drawView];
+    [drawView setHidden:false];
     
     /* Remove the draw buttons from the plot while drawing; */
-    [drawSelector removeFromSuperview];
+    [drawSelector setHidden:true];
     
     /* Disable the output enable switch and fundamental slider while drawing */
     [outputEnableSwitch setEnabled:false];
     [fundamentalSlider setEnabled:false];
+    
+    if (drawingEnvelope)
+        [self setTDScopeUpdateRate:kPlotUpdateRate/4.0f];
 }
 
 - (void)endDrawing {
@@ -389,14 +486,15 @@
     else if (drawingEnvelope) {
         [self sampleDrawnEnvelope];
         drawingEnvelope = false;
+        [self setTDScopeUpdateRate:kPlotUpdateRate];
     }
-    
+
     /* Remove the function draw view */
-    [[self drawView] removeFromSuperview];
+    [drawView setHidden:true];
     
     /* Put the segmented control back */
     [tdScopeView setAlpha:1.0];
-    [tdScopeView addSubview:[self drawSelector]];
+    [drawSelector setHidden:false];
     
     /* Set the time domain plot bounds to their original values before the tap */
     [tdScopeView setVisibleXLim:oldXMin max:oldXMax];
@@ -510,7 +608,7 @@
     int harmonicNum = (int)[sender tag];
     float linearAmp = powf(10, [sender value]/20.0);
     
-    /* Update the associated harmonic amplitude */
+    /* If we're updating a harmonic amplitude */
     if (harmonicNum <= kNumHarmonics) {
         
         /* If the wavetable synth is active, go back to the additive synth */
@@ -520,19 +618,21 @@
             [self setIndicatorDotsVisible:true];
         }
         
-        /* Find the "Manual" item and select it */
-        for (int i = 0; i < [presetSelector numberOfSegments]; i++) {
-            if ([[presetSelector titleForSegmentAtIndex:i] isEqualToString:@"Manual"]) {
-                [presetSelector setSelectedSegmentIndex:i];
-                previouslySelectedPreset = i;
+        /* Find the "Manual" item and select it if it is not already */
+        if ([presetSelector selectedSegmentIndex] == UISegmentedControlNoSegment || ![[presetSelector titleForSegmentAtIndex:[presetSelector selectedSegmentIndex]] isEqualToString:@"Manual"]) {
+            for (int i = 0; i < [presetSelector numberOfSegments]; i++) {
+                if ([[presetSelector titleForSegmentAtIndex:i] isEqualToString:@"Manual"]) {
+                    [presetSelector setSelectedSegmentIndex:i];
+                    previouslySelectedPreset = i;
+                }
             }
         }
         
+        /* Get the indicator dot's location, and set the location of the information view relative to the dot before making it visible */
         IndicatorDot *dot = [indicatorDots valueForKey:[NSString stringWithFormat:@"%d", harmonicNum]];
         
-        CGRect infoViewFrame = dot.frame;
-        infoViewFrame.size.height = 100.0;
-        infoViewFrame.size.width = 250.0;
+        CGRect infoViewFrame = harmonicInfoView.frame;
+        infoViewFrame.origin = dot.frame.origin;
         infoViewFrame.origin.y -= (infoViewFrame.size.height / 2);
         infoViewFrame.origin.x += 20.0;
         
@@ -546,49 +646,17 @@
         if ((infoViewFrame.origin.x + infoViewFrame.size.width) > fdScopeView.frame.size.width)
             infoViewFrame.origin.x = fdScopeView.frame.size.width - infoViewFrame.size.width;
         
-        /* Create the parameter info view */
-        infoView = [[UIView alloc] initWithFrame:infoViewFrame];
-        [infoView setFrame:infoViewFrame];
-        [infoView setBackgroundColor:[UIColor clearColor]];
-        [fdScopeView addSubview:infoView];
-        
-        CGRect labelFrame;
-        labelFrame.origin.x = 10;
-        labelFrame.origin.y = 10;
-        labelFrame.size.width = 100;
-        labelFrame.size.height = 30;
-        
-        /* Add the parameter labels */
-        freqParamLabel = [[UILabel alloc] initWithFrame:labelFrame];
-        [freqParamLabel setText:@"Frequency: "];
-        [infoView addSubview:freqParamLabel];
-        
-        labelFrame.origin.y += labelFrame.size.height;
-        ampParamLabel = [[UILabel alloc] initWithFrame:labelFrame];
-        [ampParamLabel setText:@"Amplitude: "];
-        [infoView addSubview:ampParamLabel];
-        
-        /* And their values */
-        labelFrame.origin.y -= labelFrame.size.height;
-        labelFrame.origin.x += labelFrame.size.width;
-        freqValueLabel = [[UILabel alloc] initWithFrame:labelFrame];
+        /* Update the harmonic info view's location/values and make it visible */
+        [harmonicInfoView setFrame:infoViewFrame];
         [freqValueLabel setText:[NSString stringWithFormat:@"%5.1f Hz", fundamentalSlider.value * harmonicNum]];
-        [freqValueLabel setTextAlignment:NSTextAlignmentRight];
-        [infoView addSubview:freqValueLabel];
-        
-        labelFrame.origin.y += labelFrame.size.height;
-        ampValueLabel = [[UILabel alloc] initWithFrame:labelFrame];
         [ampValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
-        [ampValueLabel setTextAlignment:NSTextAlignmentRight];
-        [infoView addSubview:ampValueLabel];
+        [harmonicInfoView setHidden:false];
     }
     
-    /* If we're updating the noise amplitude, create a slightly different parameter view */
-    else if (harmonicNum == kNumHarmonics+1) {
+    /* If we're updating the noise amplitude */
+    else { // if (harmonicNum == kNumHarmonics+1) {
         
-        CGRect infoViewFrame;
-        infoViewFrame.size.height = 100.0;
-        infoViewFrame.size.width = 250.0;
+        CGRect infoViewFrame = noiseInfoView.frame;
         infoViewFrame.origin.y = linearAmp;
         infoViewFrame.origin.x = 0.0;
         infoViewFrame.origin = [fdScopeView plotScaleToPixel:infoViewFrame.origin];
@@ -605,29 +673,10 @@
         if ((infoViewFrame.origin.x + infoViewFrame.size.width) > fdScopeView.frame.size.width)
             infoViewFrame.origin.x = fdScopeView.frame.size.width - infoViewFrame.size.width;
         
-        /* Create the parameter info view */
-        infoView = [[UIView alloc] initWithFrame:infoViewFrame];
-        [infoView setFrame:infoViewFrame];
-        [infoView setBackgroundColor:[UIColor clearColor]];
-        [fdScopeView addSubview:infoView];
-        
-        CGRect labelFrame;
-        labelFrame.origin.x = 10;
-        labelFrame.origin.y = 10;
-        labelFrame.size.width = 130;
-        labelFrame.size.height = 30;
-        
-        /* Add the parameter labels */
-        freqParamLabel = [[UILabel alloc] initWithFrame:labelFrame];
-        [freqParamLabel setText:@"Noise amplitude: "];
-        [infoView addSubview:freqParamLabel];
-        
-        /* And their values */
-        labelFrame.origin.y += labelFrame.size.height;
-        freqValueLabel = [[UILabel alloc] initWithFrame:labelFrame];
-        [freqValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
-        [freqValueLabel setTextAlignment:NSTextAlignmentRight];
-        [infoView addSubview:freqValueLabel];
+        /* Update the noise info view's location/values and make it visible */
+        [noiseInfoView setFrame:infoViewFrame];
+        [noiseAmpValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
+        [noiseInfoView setHidden:false];
     }
 }
 
@@ -636,15 +685,21 @@
     int harmonicNum = (int)[sender tag];
     float linearAmp = powf(10, [sender value]/20.0);
     
-    /* Update the associated harmonic amplitude */
+    /* If we're updating a harmonic amplitude */
     if (harmonicNum <= kNumHarmonics) {
         
-        IndicatorDot *dot = [indicatorDots valueForKey:[NSString stringWithFormat:@"%d", harmonicNum]];
+        /* Update the additive synth */
+        [aSynth setAmplitude:linearAmp forHarmonic:harmonicNum-1];
         
-        CGRect infoViewFrame = dot.frame;
-        infoViewFrame.size.height = 100.0;
-        infoViewFrame.size.width = 250.0;
-        infoViewFrame.origin.y -= (infoViewFrame.size.height / 3);
+        /* Get the indicator dot's location, and set the location of the information view relative to the dot before making it visible */
+        IndicatorDot *dot = [indicatorDots valueForKey:[NSString stringWithFormat:@"%d", harmonicNum]];
+        CGPoint newPos = dot.position;
+        newPos.y = linearAmp;
+        [dot setPosition:newPos];   // Update the dot's position
+        
+        CGRect infoViewFrame = harmonicInfoView.frame;
+        infoViewFrame.origin = dot.frame.origin;
+        infoViewFrame.origin.y -= (infoViewFrame.size.height / 2);
         infoViewFrame.origin.x += 20.0;
         
         /* Keep the info view frame in the FD scope */
@@ -657,28 +712,20 @@
         if ((infoViewFrame.origin.x + infoViewFrame.size.width) > fdScopeView.frame.size.width)
             infoViewFrame.origin.x = fdScopeView.frame.size.width - infoViewFrame.size.width;
         
-        [infoView setFrame:infoViewFrame];
+        /* Update the harmonic info view's location/values */
+        [harmonicInfoView setFrame:infoViewFrame];
         [freqValueLabel setText:[NSString stringWithFormat:@"%5.1f Hz", fundamentalSlider.value * harmonicNum]];
         [ampValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
-        
-        /* Update the additive synth */
-        [aSynth setAmplitude:linearAmp forHarmonic:harmonicNum-1];
-        
-        /* Update the indicator dot */
-        CGPoint newPos = dot.position;
-        newPos.y = linearAmp;
-        [dot setPosition:newPos];
     }
     
-    /* Otherwise we're updating the noise amplitude */
+    /* If we're updating the noise amplitude */
     else { // if (harmonicNum == kNumHarmonics+1) {
         
-        /* Update the noise amplitude */
+        /* Update the synths */
         [aSynth setNoiseAmplitude:linearAmp];
+        [wSynth setNoiseAmplitude:linearAmp];
         
-        CGRect infoViewFrame;
-        infoViewFrame.size.height = 100.0;
-        infoViewFrame.size.width = 250.0;
+        CGRect infoViewFrame = noiseInfoView.frame;
         infoViewFrame.origin.y = linearAmp;
         infoViewFrame.origin.x = 0.0;
         infoViewFrame.origin = [fdScopeView plotScaleToPixel:infoViewFrame.origin];
@@ -695,16 +742,8 @@
         if ((infoViewFrame.origin.x + infoViewFrame.size.width) > fdScopeView.frame.size.width)
             infoViewFrame.origin.x = fdScopeView.frame.size.width - infoViewFrame.size.width;
         
-        /* Update the frame */
-        [infoView setFrame:infoViewFrame];
-        
-        CGRect labelFrame;
-        labelFrame.origin.x = 10;
-        labelFrame.origin.y = 10;
-        labelFrame.size.width = 100;
-        labelFrame.size.height = 30;
-        
-        /* Update the noise amplitude label */
+        /* Update the noise info view's location/values */
+        [noiseInfoView setFrame:infoViewFrame];
         [freqValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
     }
 }
@@ -715,9 +754,14 @@
     int harmonicNum = (int)[sender tag];
     
     if (harmonicNum <= kNumHarmonics)
-        [infoView removeFromSuperview];
+        [harmonicInfoView setHidden:true];
     else if (harmonicNum == kNumHarmonics+1)
-        [infoView removeFromSuperview];
+        [noiseInfoView setHidden:true];
+}
+
+- (void)updateHarmonicInfoView:(CGRect)dotFrame frequency:(float)freq amplitude:(float)amp {
+    
+    
 }
 
 #pragma mark - Harmonic Presets
@@ -800,7 +844,7 @@
         
         if (i < kNumHarmonics) {
     
-            printf("h[%d] = %f\n", i, h[i]);
+//            printf("h[%d] = %f\n", i, h[i]);
             
             /* Update the sliders */
             UISlider *slider = [harmonicSliders objectForKey:[NSString stringWithFormat:@"%d", i+1]];
@@ -956,7 +1000,8 @@
     for (int i = 0; i < kNumHarmonics; i++) {
         
         IndicatorDot *dot = [indicatorDots valueForKey:[NSString stringWithFormat:@"%d", i+1]];
-        [dot setVisible:visible];
+//        [dot setVisible:visible];
+        [dot setHidden:!visible];
     }
 }
 

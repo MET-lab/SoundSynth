@@ -15,14 +15,14 @@
 #import "IndicatorDot.h"
 #import "FunctionDrawView.h"
 
+#define kPlotUpdateRate 0.002
 #define kFFTSize 1024
 #define kRecordingBufferLengthSeconds 5.0
 #define kMaxPlotMax 2.0
 #define kNumHarmonics 10
-#define kWavetablePadLength 4
+#define kWavetablePadLength 10
 
-@interface ViewController : UIViewController
-    <METScopeViewDelegate, FunctionDrawViewDelegate, AudioOutputDelegate> {
+@interface ViewController : UIViewController <METScopeViewDelegate, FunctionDrawViewDelegate, AudioOutputDelegate> {
     
     AudioOutput *audioOutput;
     AdditiveSynth *aSynth;
@@ -30,10 +30,11 @@
     
     IBOutlet METScopeView *tdScopeView;
     NSTimer *tdUpdateClock;
+    bool tdHold;
     
-//    UISegmentedControl *drawSelector;
-//    UIButton *finishDrawingButton;
-//    FunctionDrawView *drawView;
+    UISegmentedControl *drawSelector;
+    UIButton *finishDrawingButton;
+    FunctionDrawView *drawView;
     int envLength;
     float *drawnEnvelope;
     int wavetableLength;
@@ -49,16 +50,22 @@
     
     IBOutlet METScopeView *fdScopeView;
     NSTimer *fdUpdateClock;
+    bool fdHold;
     
     IBOutlet UISlider *fundamentalSlider;
     IBOutlet UILabel *fundamentalLabel;
     NSMutableDictionary *harmonicSliders;
     NSMutableDictionary *indicatorDots;
-    UIView *infoView;
+    
+    UIView *harmonicInfoView;
     UILabel *freqParamLabel;
     UILabel *freqValueLabel;
     UILabel *ampParamLabel;
     UILabel *ampValueLabel;
+    
+    UIView *noiseInfoView;
+    UILabel *noiseAmpParamLabel;
+    UILabel *noiseAmpValueLabel;
     
     int recordingBufferLength;
     float *recordingBuffer;
@@ -67,9 +74,5 @@
     
     IBOutlet UISwitch *outputEnableSwitch;
 }
-
-@property (strong, nonatomic) FunctionDrawView *drawView;
-@property (strong, nonatomic) UIButton *finishDrawingButton;
-@property (strong, nonatomic) UISegmentedControl *drawSelector;
 
 @end
