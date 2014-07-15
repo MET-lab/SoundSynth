@@ -21,6 +21,22 @@
 		1F1711521970592A001E4237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1711341970592A001E4237 /* UIKit.framework */; };
 		1F17115A1970592A001E4237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F1711581970592A001E4237 /* InfoPlist.strings */; };
 		1F17115C1970592A001E4237 /* SoundSynthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F17115B1970592A001E4237 /* SoundSynthTests.m */; };
+		1F1712DA19719F30001E4237 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712D919719F30001E4237 /* AudioOutput.m */; };
+		1F1712DD1971A112001E4237 /* METScopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712DC1971A112001E4237 /* METScopeView.m */; };
+		1F1712E01971A17C001E4237 /* IndicatorDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712DF1971A17C001E4237 /* IndicatorDot.m */; };
+		1F1712E41971AB5D001E4237 /* AdditiveSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712E31971AB5D001E4237 /* AdditiveSynth.m */; };
+		1F1712E71972E6B7001E4237 /* FunctionDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712E61972E6B7001E4237 /* FunctionDrawView.m */; };
+		1F1712EA19743243001E4237 /* WavetableSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712E919743243001E4237 /* WavetableSynth.m */; };
+		1F171302197449E5001E4237 /* NVAllpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712EF197449E5001E4237 /* NVAllpassFilter.m */; };
+		1F171303197449E5001E4237 /* NVBandpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712F1197449E5001E4237 /* NVBandpassFilter.m */; };
+		1F171304197449E5001E4237 /* NVBandpassQPeakGainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712F3197449E5001E4237 /* NVBandpassQPeakGainFilter.m */; };
+		1F171305197449E5001E4237 /* NVHighpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712F5197449E5001E4237 /* NVHighpassFilter.m */; };
+		1F171306197449E5001E4237 /* NVHighShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712F7197449E5001E4237 /* NVHighShelvingFilter.m */; };
+		1F171307197449E5001E4237 /* NVLowpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712F9197449E5001E4237 /* NVLowpassFilter.m */; };
+		1F171308197449E5001E4237 /* NVLowShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712FB197449E5001E4237 /* NVLowShelvingFilter.m */; };
+		1F171309197449E5001E4237 /* NVNotchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712FD197449E5001E4237 /* NVNotchFilter.m */; };
+		1F17130A197449E5001E4237 /* NVPeakingEQFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712FF197449E5001E4237 /* NVPeakingEQFilter.m */; };
+		1F17130B197449E5001E4237 /* NVDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F171301197449E5001E4237 /* NVDSP.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +69,38 @@
 		1F1711571970592A001E4237 /* SoundSynthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundSynthTests-Info.plist"; sourceTree = "<group>"; };
 		1F1711591970592A001E4237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F17115B1970592A001E4237 /* SoundSynthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundSynthTests.m; sourceTree = "<group>"; };
+		1F1712D819719F30001E4237 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		1F1712D919719F30001E4237 /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
+		1F1712DB1971A112001E4237 /* METScopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METScopeView.h; sourceTree = "<group>"; };
+		1F1712DC1971A112001E4237 /* METScopeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METScopeView.m; sourceTree = "<group>"; };
+		1F1712DE1971A17C001E4237 /* IndicatorDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicatorDot.h; sourceTree = "<group>"; };
+		1F1712DF1971A17C001E4237 /* IndicatorDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicatorDot.m; sourceTree = "<group>"; };
+		1F1712E21971AB5D001E4237 /* AdditiveSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditiveSynth.h; sourceTree = SOURCE_ROOT; };
+		1F1712E31971AB5D001E4237 /* AdditiveSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditiveSynth.m; sourceTree = SOURCE_ROOT; };
+		1F1712E51972E6B7001E4237 /* FunctionDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionDrawView.h; sourceTree = SOURCE_ROOT; };
+		1F1712E61972E6B7001E4237 /* FunctionDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionDrawView.m; sourceTree = SOURCE_ROOT; };
+		1F1712E819743243001E4237 /* WavetableSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavetableSynth.h; sourceTree = "<group>"; };
+		1F1712E919743243001E4237 /* WavetableSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavetableSynth.m; sourceTree = "<group>"; };
+		1F1712EE197449E5001E4237 /* NVAllpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVAllpassFilter.h; sourceTree = "<group>"; };
+		1F1712EF197449E5001E4237 /* NVAllpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVAllpassFilter.m; sourceTree = "<group>"; };
+		1F1712F0197449E5001E4237 /* NVBandpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVBandpassFilter.h; sourceTree = "<group>"; };
+		1F1712F1197449E5001E4237 /* NVBandpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVBandpassFilter.m; sourceTree = "<group>"; };
+		1F1712F2197449E5001E4237 /* NVBandpassQPeakGainFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVBandpassQPeakGainFilter.h; sourceTree = "<group>"; };
+		1F1712F3197449E5001E4237 /* NVBandpassQPeakGainFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVBandpassQPeakGainFilter.m; sourceTree = "<group>"; };
+		1F1712F4197449E5001E4237 /* NVHighpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVHighpassFilter.h; sourceTree = "<group>"; };
+		1F1712F5197449E5001E4237 /* NVHighpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVHighpassFilter.m; sourceTree = "<group>"; };
+		1F1712F6197449E5001E4237 /* NVHighShelvingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVHighShelvingFilter.h; sourceTree = "<group>"; };
+		1F1712F7197449E5001E4237 /* NVHighShelvingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVHighShelvingFilter.m; sourceTree = "<group>"; };
+		1F1712F8197449E5001E4237 /* NVLowpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVLowpassFilter.h; sourceTree = "<group>"; };
+		1F1712F9197449E5001E4237 /* NVLowpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVLowpassFilter.m; sourceTree = "<group>"; };
+		1F1712FA197449E5001E4237 /* NVLowShelvingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVLowShelvingFilter.h; sourceTree = "<group>"; };
+		1F1712FB197449E5001E4237 /* NVLowShelvingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVLowShelvingFilter.m; sourceTree = "<group>"; };
+		1F1712FC197449E5001E4237 /* NVNotchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVNotchFilter.h; sourceTree = "<group>"; };
+		1F1712FD197449E5001E4237 /* NVNotchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVNotchFilter.m; sourceTree = "<group>"; };
+		1F1712FE197449E5001E4237 /* NVPeakingEQFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVPeakingEQFilter.h; sourceTree = "<group>"; };
+		1F1712FF197449E5001E4237 /* NVPeakingEQFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVPeakingEQFilter.m; sourceTree = "<group>"; };
+		1F171300197449E5001E4237 /* NVDSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDSP.h; sourceTree = "<group>"; };
+		1F171301197449E5001E4237 /* NVDSP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NVDSP.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +130,9 @@
 		1F1711241970592A001E4237 = {
 			isa = PBXGroup;
 			children = (
+				1F1712EC197449E5001E4237 /* NVDSP */,
+				1F1712EB197449D3001E4237 /* Visual */,
+				1F1712E11971A195001E4237 /* Audio */,
 				1F1711361970592A001E4237 /* SoundSynth */,
 				1F1711551970592A001E4237 /* SoundSynthTests */,
 				1F17112F1970592A001E4237 /* Frameworks */,
@@ -150,6 +201,67 @@
 				1F1711581970592A001E4237 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F1712E11971A195001E4237 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				1F1712E21971AB5D001E4237 /* AdditiveSynth.h */,
+				1F1712E31971AB5D001E4237 /* AdditiveSynth.m */,
+				1F1712E819743243001E4237 /* WavetableSynth.h */,
+				1F1712E919743243001E4237 /* WavetableSynth.m */,
+				1F1712D819719F30001E4237 /* AudioOutput.h */,
+				1F1712D919719F30001E4237 /* AudioOutput.m */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		1F1712EB197449D3001E4237 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				1F1712E51972E6B7001E4237 /* FunctionDrawView.h */,
+				1F1712E61972E6B7001E4237 /* FunctionDrawView.m */,
+				1F1712DB1971A112001E4237 /* METScopeView.h */,
+				1F1712DC1971A112001E4237 /* METScopeView.m */,
+				1F1712DE1971A17C001E4237 /* IndicatorDot.h */,
+				1F1712DF1971A17C001E4237 /* IndicatorDot.m */,
+			);
+			name = Visual;
+			sourceTree = "<group>";
+		};
+		1F1712EC197449E5001E4237 /* NVDSP */ = {
+			isa = PBXGroup;
+			children = (
+				1F1712ED197449E5001E4237 /* Filters */,
+				1F171300197449E5001E4237 /* NVDSP.h */,
+				1F171301197449E5001E4237 /* NVDSP.mm */,
+			);
+			path = NVDSP;
+			sourceTree = "<group>";
+		};
+		1F1712ED197449E5001E4237 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				1F1712EE197449E5001E4237 /* NVAllpassFilter.h */,
+				1F1712EF197449E5001E4237 /* NVAllpassFilter.m */,
+				1F1712F0197449E5001E4237 /* NVBandpassFilter.h */,
+				1F1712F1197449E5001E4237 /* NVBandpassFilter.m */,
+				1F1712F2197449E5001E4237 /* NVBandpassQPeakGainFilter.h */,
+				1F1712F3197449E5001E4237 /* NVBandpassQPeakGainFilter.m */,
+				1F1712F4197449E5001E4237 /* NVHighpassFilter.h */,
+				1F1712F5197449E5001E4237 /* NVHighpassFilter.m */,
+				1F1712F6197449E5001E4237 /* NVHighShelvingFilter.h */,
+				1F1712F7197449E5001E4237 /* NVHighShelvingFilter.m */,
+				1F1712F8197449E5001E4237 /* NVLowpassFilter.h */,
+				1F1712F9197449E5001E4237 /* NVLowpassFilter.m */,
+				1F1712FA197449E5001E4237 /* NVLowShelvingFilter.h */,
+				1F1712FB197449E5001E4237 /* NVLowShelvingFilter.m */,
+				1F1712FC197449E5001E4237 /* NVNotchFilter.h */,
+				1F1712FD197449E5001E4237 /* NVNotchFilter.m */,
+				1F1712FE197449E5001E4237 /* NVPeakingEQFilter.h */,
+				1F1712FF197449E5001E4237 /* NVPeakingEQFilter.m */,
+			);
+			path = Filters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +361,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F171307197449E5001E4237 /* NVLowpassFilter.m in Sources */,
+				1F171309197449E5001E4237 /* NVNotchFilter.m in Sources */,
+				1F1712DD1971A112001E4237 /* METScopeView.m in Sources */,
+				1F171306197449E5001E4237 /* NVHighShelvingFilter.m in Sources */,
 				1F1711471970592A001E4237 /* ViewController.m in Sources */,
+				1F171302197449E5001E4237 /* NVAllpassFilter.m in Sources */,
+				1F171303197449E5001E4237 /* NVBandpassFilter.m in Sources */,
 				1F1711411970592A001E4237 /* AppDelegate.m in Sources */,
 				1F17113D1970592A001E4237 /* main.m in Sources */,
+				1F17130B197449E5001E4237 /* NVDSP.mm in Sources */,
+				1F17130A197449E5001E4237 /* NVPeakingEQFilter.m in Sources */,
+				1F1712EA19743243001E4237 /* WavetableSynth.m in Sources */,
+				1F1712E71972E6B7001E4237 /* FunctionDrawView.m in Sources */,
+				1F1712E41971AB5D001E4237 /* AdditiveSynth.m in Sources */,
+				1F171304197449E5001E4237 /* NVBandpassQPeakGainFilter.m in Sources */,
+				1F171308197449E5001E4237 /* NVLowShelvingFilter.m in Sources */,
+				1F1712DA19719F30001E4237 /* AudioOutput.m in Sources */,
+				1F1712E01971A17C001E4237 /* IndicatorDot.m in Sources */,
+				1F171305197449E5001E4237 /* NVHighpassFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +586,7 @@
 				1F1711611970592A001E4237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1711621970592A001E4237 /* Build configuration list for PBXNativeTarget "SoundSynthTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +595,7 @@
 				1F1711641970592A001E4237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
