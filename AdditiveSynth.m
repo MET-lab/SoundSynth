@@ -93,7 +93,7 @@
         /* Harmonics */
         for (int n = 0; n < n_h; n++) {
             if (f_0 * (n+1) < 20000.0)
-                buffer[i] += a_h[n] * sin((n+1) * theta);
+                buffer[i] += (a_h[n] * sin((n+1) * theta));
         }
         
         if (env) {
