@@ -24,14 +24,24 @@
 
 @interface ViewController : UIViewController <METScopeViewDelegate, FunctionDrawViewDelegate, AudioOutputDelegate> {
     
+    /* Audio/Synthesis */
     AudioOutput *audioOutput;
     AdditiveSynth *aSynth;
     WavetableSynth *wSynth;
+    IBOutlet UISwitch *outputEnableSwitch;
     
+    /* Recording */
+    int recordingBufferLength;
+    float *recordingBuffer;
+    pthread_mutex_t recordingBufferMutex;
+    int phaseZeroOffset;
+    
+    /* Time-domain Scope */
     IBOutlet METScopeView *tdScopeView;
     NSTimer *tdUpdateClock;
     bool tdHold;
     
+    /* Waveform/Envelope Drawing */
     UISegmentedControl *drawSelector;
     UIButton *finishDrawingButton;
     FunctionDrawView *drawView;
@@ -44,35 +54,28 @@
     float oldXMin, oldXMax;
     float oldXGridScale;
     
-    UISegmentedControl *presetSelector;
-    NSInteger previouslySelectedPreset;
-    float previousHarmonics[kNumHarmonics];
-    
+    /* Frequency-domain Scope */
     IBOutlet METScopeView *fdScopeView;
     NSTimer *fdUpdateClock;
     bool fdHold;
     
+    /* Harmonic Presets */
+    UISegmentedControl *presetSelector;
+    NSInteger previouslySelectedPreset;
+    float previousHarmonics[kNumHarmonics];
+    
+    /* Synth Parameters */
     IBOutlet UISlider *fundamentalSlider;
     IBOutlet UILabel *fundamentalLabel;
     NSMutableDictionary *harmonicSliders;
     NSMutableDictionary *indicatorDots;
     
+    /* Parameter Information Views */
     UIView *harmonicInfoView;
-    UILabel *freqParamLabel;
     UILabel *freqValueLabel;
-    UILabel *ampParamLabel;
     UILabel *ampValueLabel;
-    
     UIView *noiseInfoView;
-    UILabel *noiseAmpParamLabel;
     UILabel *noiseAmpValueLabel;
-    
-    int recordingBufferLength;
-    float *recordingBuffer;
-    pthread_mutex_t recordingBufferMutex;
-    int phaseZeroOffset;
-    
-    IBOutlet UISwitch *outputEnableSwitch;
 }
 
 @end

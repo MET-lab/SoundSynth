@@ -224,12 +224,12 @@
     frame.size.width = 90;
     frame.size.height = 30;
     
-    freqParamLabel = [[UILabel alloc] initWithFrame:frame];
+    UILabel *freqParamLabel = [[UILabel alloc] initWithFrame:frame];
     [freqParamLabel setText:@"Frequency: "];
     [harmonicInfoView addSubview:freqParamLabel];
     
     frame.origin.y += frame.size.height;
-    ampParamLabel = [[UILabel alloc] initWithFrame:frame];
+    UILabel *ampParamLabel = [[UILabel alloc] initWithFrame:frame];
     [ampParamLabel setText:@"Amplitude: "];
     [harmonicInfoView addSubview:ampParamLabel];
 
@@ -267,7 +267,7 @@
     frame.size.width = 135;
     frame.size.height = 30;
     
-    noiseAmpParamLabel = [[UILabel alloc] initWithFrame:frame];
+    UILabel *noiseAmpParamLabel = [[UILabel alloc] initWithFrame:frame];
     [noiseAmpParamLabel setText:@"Noise Amplitude: "];
     [noiseAmpParamLabel setTextAlignment:NSTextAlignmentRight];
     [noiseInfoView addSubview:noiseAmpParamLabel];
@@ -744,7 +744,7 @@
         
         /* Update the noise info view's location/values */
         [noiseInfoView setFrame:infoViewFrame];
-        [freqValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
+        [noiseAmpValueLabel setText:[NSString stringWithFormat:@"%3.1f dB", [sender value]]];
     }
 }
 
@@ -866,6 +866,7 @@
     if ([wSynth enabled]) {
         [wSynth setEnabled:false];
         [aSynth setEnabled:true];
+        [self setIndicatorDotsVisible:true];
     }
     
     previouslySelectedPreset = [sender selectedSegmentIndex];
