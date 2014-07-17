@@ -1,3 +1,4 @@
-dependencies: /Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.m \
-  /Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.h \
-  /Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.h
+dependencies: \
+  /Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m \
+  /Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.h \
+  /Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.h

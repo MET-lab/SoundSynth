@@ -21,12 +21,6 @@
 		1F1711521970592A001E4237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1711341970592A001E4237 /* UIKit.framework */; };
 		1F17115A1970592A001E4237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F1711581970592A001E4237 /* InfoPlist.strings */; };
 		1F17115C1970592A001E4237 /* SoundSynthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F17115B1970592A001E4237 /* SoundSynthTests.m */; };
-		1F1712DA19719F30001E4237 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712D919719F30001E4237 /* AudioOutput.m */; };
-		1F1712DD1971A112001E4237 /* METScopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712DC1971A112001E4237 /* METScopeView.m */; };
-		1F1712E01971A17C001E4237 /* IndicatorDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712DF1971A17C001E4237 /* IndicatorDot.m */; };
-		1F1712E41971AB5D001E4237 /* AdditiveSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712E31971AB5D001E4237 /* AdditiveSynth.m */; };
-		1F1712E71972E6B7001E4237 /* FunctionDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712E61972E6B7001E4237 /* FunctionDrawView.m */; };
-		1F1712EA19743243001E4237 /* WavetableSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712E919743243001E4237 /* WavetableSynth.m */; };
 		1F171302197449E5001E4237 /* NVAllpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712EF197449E5001E4237 /* NVAllpassFilter.m */; };
 		1F171303197449E5001E4237 /* NVBandpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712F1197449E5001E4237 /* NVBandpassFilter.m */; };
 		1F171304197449E5001E4237 /* NVBandpassQPeakGainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712F3197449E5001E4237 /* NVBandpassQPeakGainFilter.m */; };
@@ -37,6 +31,20 @@
 		1F171309197449E5001E4237 /* NVNotchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712FD197449E5001E4237 /* NVNotchFilter.m */; };
 		1F17130A197449E5001E4237 /* NVPeakingEQFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1712FF197449E5001E4237 /* NVPeakingEQFilter.m */; };
 		1F17130B197449E5001E4237 /* NVDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F171301197449E5001E4237 /* NVDSP.mm */; };
+		1FBE91D0197822920097D493 /* AdditiveSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE91BB197822920097D493 /* AdditiveSynth.m */; };
+		1FBE91D1197822920097D493 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE91BD197822920097D493 /* AudioOutput.m */; };
+		1FBE91D2197822920097D493 /* WavetableSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE91BF197822920097D493 /* WavetableSynth.m */; };
+		1FBE91D3197822920097D493 /* icon_152.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C1197822920097D493 /* icon_152.png */; };
+		1FBE91D4197822920097D493 /* icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C2197822920097D493 /* icon_29.png */; };
+		1FBE91D5197822920097D493 /* icon_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C3197822920097D493 /* icon_40.png */; };
+		1FBE91D6197822920097D493 /* icon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C4197822920097D493 /* icon_58.png */; };
+		1FBE91D7197822920097D493 /* icon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C5197822920097D493 /* icon_76.png */; };
+		1FBE91D8197822920097D493 /* icon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C6197822920097D493 /* icon_80.png */; };
+		1FBE91D9197822920097D493 /* sawtoothwave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C7197822920097D493 /* sawtoothwave.jpg */; };
+		1FBE91DA197822920097D493 /* sawtoothwave.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE91C8197822920097D493 /* sawtoothwave.png */; };
+		1FBE91DB197822920097D493 /* FunctionDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE91CB197822920097D493 /* FunctionDrawView.m */; };
+		1FBE91DC197822920097D493 /* IndicatorDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE91CD197822920097D493 /* IndicatorDot.m */; };
+		1FBE91DD197822920097D493 /* METScopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE91CF197822920097D493 /* METScopeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,18 +77,6 @@
 		1F1711571970592A001E4237 /* SoundSynthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundSynthTests-Info.plist"; sourceTree = "<group>"; };
 		1F1711591970592A001E4237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F17115B1970592A001E4237 /* SoundSynthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundSynthTests.m; sourceTree = "<group>"; };
-		1F1712D819719F30001E4237 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
-		1F1712D919719F30001E4237 /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
-		1F1712DB1971A112001E4237 /* METScopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METScopeView.h; sourceTree = "<group>"; };
-		1F1712DC1971A112001E4237 /* METScopeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METScopeView.m; sourceTree = "<group>"; };
-		1F1712DE1971A17C001E4237 /* IndicatorDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicatorDot.h; sourceTree = "<group>"; };
-		1F1712DF1971A17C001E4237 /* IndicatorDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicatorDot.m; sourceTree = "<group>"; };
-		1F1712E21971AB5D001E4237 /* AdditiveSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditiveSynth.h; sourceTree = SOURCE_ROOT; };
-		1F1712E31971AB5D001E4237 /* AdditiveSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditiveSynth.m; sourceTree = SOURCE_ROOT; };
-		1F1712E51972E6B7001E4237 /* FunctionDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionDrawView.h; sourceTree = SOURCE_ROOT; };
-		1F1712E61972E6B7001E4237 /* FunctionDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionDrawView.m; sourceTree = SOURCE_ROOT; };
-		1F1712E819743243001E4237 /* WavetableSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavetableSynth.h; sourceTree = "<group>"; };
-		1F1712E919743243001E4237 /* WavetableSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavetableSynth.m; sourceTree = "<group>"; };
 		1F1712EE197449E5001E4237 /* NVAllpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVAllpassFilter.h; sourceTree = "<group>"; };
 		1F1712EF197449E5001E4237 /* NVAllpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVAllpassFilter.m; sourceTree = "<group>"; };
 		1F1712F0197449E5001E4237 /* NVBandpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVBandpassFilter.h; sourceTree = "<group>"; };
@@ -101,6 +97,26 @@
 		1F1712FF197449E5001E4237 /* NVPeakingEQFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVPeakingEQFilter.m; sourceTree = "<group>"; };
 		1F171300197449E5001E4237 /* NVDSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDSP.h; sourceTree = "<group>"; };
 		1F171301197449E5001E4237 /* NVDSP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NVDSP.mm; sourceTree = "<group>"; };
+		1FBE91BA197822920097D493 /* AdditiveSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditiveSynth.h; sourceTree = "<group>"; };
+		1FBE91BB197822920097D493 /* AdditiveSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditiveSynth.m; sourceTree = "<group>"; };
+		1FBE91BC197822920097D493 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		1FBE91BD197822920097D493 /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
+		1FBE91BE197822920097D493 /* WavetableSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavetableSynth.h; sourceTree = "<group>"; };
+		1FBE91BF197822920097D493 /* WavetableSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavetableSynth.m; sourceTree = "<group>"; };
+		1FBE91C1197822920097D493 /* icon_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_152.png; sourceTree = "<group>"; };
+		1FBE91C2197822920097D493 /* icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29.png; sourceTree = "<group>"; };
+		1FBE91C3197822920097D493 /* icon_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40.png; sourceTree = "<group>"; };
+		1FBE91C4197822920097D493 /* icon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_58.png; sourceTree = "<group>"; };
+		1FBE91C5197822920097D493 /* icon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76.png; sourceTree = "<group>"; };
+		1FBE91C6197822920097D493 /* icon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_80.png; sourceTree = "<group>"; };
+		1FBE91C7197822920097D493 /* sawtoothwave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sawtoothwave.jpg; sourceTree = "<group>"; };
+		1FBE91C8197822920097D493 /* sawtoothwave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sawtoothwave.png; sourceTree = "<group>"; };
+		1FBE91CA197822920097D493 /* FunctionDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionDrawView.h; sourceTree = "<group>"; };
+		1FBE91CB197822920097D493 /* FunctionDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionDrawView.m; sourceTree = "<group>"; };
+		1FBE91CC197822920097D493 /* IndicatorDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicatorDot.h; sourceTree = "<group>"; };
+		1FBE91CD197822920097D493 /* IndicatorDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicatorDot.m; sourceTree = "<group>"; };
+		1FBE91CE197822920097D493 /* METScopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METScopeView.h; sourceTree = "<group>"; };
+		1FBE91CF197822920097D493 /* METScopeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METScopeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +146,10 @@
 		1F1711241970592A001E4237 = {
 			isa = PBXGroup;
 			children = (
+				1FBE91B9197822920097D493 /* Audio */,
+				1FBE91C0197822920097D493 /* Icons */,
+				1FBE91C9197822920097D493 /* Visual */,
 				1F1712EC197449E5001E4237 /* NVDSP */,
-				1F1712EB197449D3001E4237 /* Visual */,
-				1F1712E11971A195001E4237 /* Audio */,
 				1F1711361970592A001E4237 /* SoundSynth */,
 				1F1711551970592A001E4237 /* SoundSynthTests */,
 				1F17112F1970592A001E4237 /* Frameworks */,
@@ -203,32 +220,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1F1712E11971A195001E4237 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				1F1712E21971AB5D001E4237 /* AdditiveSynth.h */,
-				1F1712E31971AB5D001E4237 /* AdditiveSynth.m */,
-				1F1712E819743243001E4237 /* WavetableSynth.h */,
-				1F1712E919743243001E4237 /* WavetableSynth.m */,
-				1F1712D819719F30001E4237 /* AudioOutput.h */,
-				1F1712D919719F30001E4237 /* AudioOutput.m */,
-			);
-			name = Audio;
-			sourceTree = "<group>";
-		};
-		1F1712EB197449D3001E4237 /* Visual */ = {
-			isa = PBXGroup;
-			children = (
-				1F1712E51972E6B7001E4237 /* FunctionDrawView.h */,
-				1F1712E61972E6B7001E4237 /* FunctionDrawView.m */,
-				1F1712DB1971A112001E4237 /* METScopeView.h */,
-				1F1712DC1971A112001E4237 /* METScopeView.m */,
-				1F1712DE1971A17C001E4237 /* IndicatorDot.h */,
-				1F1712DF1971A17C001E4237 /* IndicatorDot.m */,
-			);
-			name = Visual;
-			sourceTree = "<group>";
-		};
 		1F1712EC197449E5001E4237 /* NVDSP */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +253,47 @@
 				1F1712FF197449E5001E4237 /* NVPeakingEQFilter.m */,
 			);
 			path = Filters;
+			sourceTree = "<group>";
+		};
+		1FBE91B9197822920097D493 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE91BA197822920097D493 /* AdditiveSynth.h */,
+				1FBE91BB197822920097D493 /* AdditiveSynth.m */,
+				1FBE91BC197822920097D493 /* AudioOutput.h */,
+				1FBE91BD197822920097D493 /* AudioOutput.m */,
+				1FBE91BE197822920097D493 /* WavetableSynth.h */,
+				1FBE91BF197822920097D493 /* WavetableSynth.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		1FBE91C0197822920097D493 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE91C1197822920097D493 /* icon_152.png */,
+				1FBE91C2197822920097D493 /* icon_29.png */,
+				1FBE91C3197822920097D493 /* icon_40.png */,
+				1FBE91C4197822920097D493 /* icon_58.png */,
+				1FBE91C5197822920097D493 /* icon_76.png */,
+				1FBE91C6197822920097D493 /* icon_80.png */,
+				1FBE91C7197822920097D493 /* sawtoothwave.jpg */,
+				1FBE91C8197822920097D493 /* sawtoothwave.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		1FBE91C9197822920097D493 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE91CA197822920097D493 /* FunctionDrawView.h */,
+				1FBE91CB197822920097D493 /* FunctionDrawView.m */,
+				1FBE91CC197822920097D493 /* IndicatorDot.h */,
+				1FBE91CD197822920097D493 /* IndicatorDot.m */,
+				1FBE91CE197822920097D493 /* METScopeView.h */,
+				1FBE91CF197822920097D493 /* METScopeView.m */,
+			);
+			path = Visual;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,8 +373,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F1711491970592A001E4237 /* Images.xcassets in Resources */,
+				1FBE91DA197822920097D493 /* sawtoothwave.png in Resources */,
 				1F17113B1970592A001E4237 /* InfoPlist.strings in Resources */,
+				1FBE91D4197822920097D493 /* icon_29.png in Resources */,
+				1FBE91D7197822920097D493 /* icon_76.png in Resources */,
 				1F1711441970592A001E4237 /* Main.storyboard in Resources */,
+				1FBE91D5197822920097D493 /* icon_40.png in Resources */,
+				1FBE91D3197822920097D493 /* icon_152.png in Resources */,
+				1FBE91D8197822920097D493 /* icon_80.png in Resources */,
+				1FBE91D6197822920097D493 /* icon_58.png in Resources */,
+				1FBE91D9197822920097D493 /* sawtoothwave.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,22 +403,22 @@
 			files = (
 				1F171307197449E5001E4237 /* NVLowpassFilter.m in Sources */,
 				1F171309197449E5001E4237 /* NVNotchFilter.m in Sources */,
-				1F1712DD1971A112001E4237 /* METScopeView.m in Sources */,
 				1F171306197449E5001E4237 /* NVHighShelvingFilter.m in Sources */,
+				1FBE91DB197822920097D493 /* FunctionDrawView.m in Sources */,
 				1F1711471970592A001E4237 /* ViewController.m in Sources */,
+				1FBE91DC197822920097D493 /* IndicatorDot.m in Sources */,
+				1FBE91DD197822920097D493 /* METScopeView.m in Sources */,
+				1FBE91D0197822920097D493 /* AdditiveSynth.m in Sources */,
 				1F171302197449E5001E4237 /* NVAllpassFilter.m in Sources */,
 				1F171303197449E5001E4237 /* NVBandpassFilter.m in Sources */,
 				1F1711411970592A001E4237 /* AppDelegate.m in Sources */,
 				1F17113D1970592A001E4237 /* main.m in Sources */,
 				1F17130B197449E5001E4237 /* NVDSP.mm in Sources */,
 				1F17130A197449E5001E4237 /* NVPeakingEQFilter.m in Sources */,
-				1F1712EA19743243001E4237 /* WavetableSynth.m in Sources */,
-				1F1712E71972E6B7001E4237 /* FunctionDrawView.m in Sources */,
-				1F1712E41971AB5D001E4237 /* AdditiveSynth.m in Sources */,
 				1F171304197449E5001E4237 /* NVBandpassQPeakGainFilter.m in Sources */,
+				1FBE91D2197822920097D493 /* WavetableSynth.m in Sources */,
 				1F171308197449E5001E4237 /* NVLowShelvingFilter.m in Sources */,
-				1F1712DA19719F30001E4237 /* AudioOutput.m in Sources */,
-				1F1712E01971A17C001E4237 /* IndicatorDot.m in Sources */,
+				1FBE91D1197822920097D493 /* AudioOutput.m in Sources */,
 				1F171305197449E5001E4237 /* NVHighpassFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

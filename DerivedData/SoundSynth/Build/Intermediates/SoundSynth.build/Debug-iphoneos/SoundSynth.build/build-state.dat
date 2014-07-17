@@ -7,7 +7,7 @@ cProcessPCH /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Buil
 cProcessPCH++ /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-hhqytknypifaylhkakednqdddftc/SoundSynth-Prefix.pch.pch SoundSynth/SoundSynth-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVLowpassFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVLowpassFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVNotchFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVNotchFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o /Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o /Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVHighShelvingFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVHighShelvingFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVAllpassFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVAllpassFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -16,17 +16,25 @@ cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-ipho
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/main.o /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVDSP.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/NVDSP.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVPeakingEQFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVPeakingEQFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/WavetableSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o /Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o /Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVBandpassQPeakGainFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVBandpassQPeakGainFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVLowShelvingFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVLowShelvingFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o /Users/Jeff/Computering/Xcode/SoundSynth/AudioOutput.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o /Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o /Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVHighpassFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVHighpassFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth normal armv7
+cCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png Icons/sawtoothwave.png
 cCopyStringsFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/en.lproj/InfoPlist.strings SoundSynth/en.lproj/InfoPlist.strings
+cCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png Icons/icon_29.png
+cCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png Icons/icon_76.png
 cCompileStoryboard /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Base.lproj/Main.storyboard
+cCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png Icons/icon_40.png
+cCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png Icons/icon_152.png
+cCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png Icons/icon_80.png
+cCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png Icons/icon_58.png
+cCpResource Icons/sawtoothwave.jpg DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg
 cCompileAssetCatalog /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets
 cProcessInfoPlistFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist
 cGenerateDSYMFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth
@@ -356,19 +364,49 @@ t1397233901
 s20812
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.h
-c0000000053C476790000000000000548
-t1405384313
-s1352
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.m
 c0000000053C599230000000000000E38
 t1405458723
 s3640
 
-N/Users/Jeff/Computering/Xcode/SoundSynth/AudioOutput.h
+N/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.h
+c0000000053C476790000000000000548
+t1405384313
+s1352
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m
+c0000000053C599230000000000000E38
+t1405458723
+s3640
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.h
 c0000000053C16CD70000000000000ACA
 t1405185239
 s2762
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m
+c0000000053C578DA0000000000002537
+t1405450458
+s9527
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.h
+c0000000053C7EB3E00000000000005D4
+t1405610814
+s1492
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m
+c0000000053C7EB4B00000000000012C2
+t1405610827
+s4802
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/AudioOutput.h
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/AudioOutput.m
 c0000000053C578DA0000000000002537
@@ -384,28 +422,28 @@ t1405358845
 s6263204
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o
-t1405458738
-s16844
+t1405610791
+s16860
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.o
 t1405185297
 s61744
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o
-t1405450573
-s40616
+t1405610791
+s40624
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o
-t1405357943
-s58716
+t1405610791
+s58724
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o
-t1405452193
-s52736
+t1405610792
+s52752
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o
-t1405450573
-s203000
+t1405610792
+s203008
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVAllpassFilter.o
 t1405358845
@@ -448,40 +486,40 @@ t1405358845
 s11160
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/SoundSynth.LinkFileList
-c0000000053C412FD0000000000000CB3
-t1405358845
+c0000000053C7EB260000000000000CB3
+t1405610790
 s3251
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o
-t1405528599
-s161824
+t1405610815
+s161880
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o
-t1405458738
-s21272
+t1405610827
+s21280
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/main.o
 t1405458738
 s3792
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent
-t1405362858
+t1405610817
 s418
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_dependencies.txt
-t1405185703
-s302
+t1405610816
+s1103
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist
-t1405185703
-s181
+t1405610816
+s445
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app
-t1405528599
-s374
+t1405610827
+s850
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM
-t1405528518
+t1405610816
 s102
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Base.lproj/Main.storyboardc
@@ -489,11 +527,11 @@ t1405482670
 s170
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist
-t1405185703
-s1073
+t1405610816
+s1205
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/PkgInfo
-t1405185703
+t1405610816
 s8
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist
@@ -501,8 +539,8 @@ t1405185295
 s150
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth
-t1405528599
-s281380
+t1405610827
+s281476
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/embedded.mobileprovision
 t1405185703
@@ -512,20 +550,92 @@ N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/
 t1405185702
 s42
 
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png
+t1405610815
+s29654
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png
+t1405610815
+s4722
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png
+t1405610815
+s5956
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png
+t1405610815
+s8387
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png
+t1405610815
+s11247
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png
+t1405610815
+s11853
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg
+t1405610815
+s25758
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png
+t1405610815
+s37891
+
 N/Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.h
-c0000000053C40E26000000000000035A
-t1405357606
-s858
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.m
 c0000000053C40F2F0000000000001B1D
 t1405357871
 s6941
 
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_152.png
+c0000000053C7EAEF0000000000007DA2
+t1405610735
+s32162
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_29.png
+c0000000053C7EAD60000000000001129
+t1405610710
+s4393
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_40.png
+c0000000053C7EABE0000000000001607
+t1405610686
+s5639
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_58.png
+c0000000053C7EAC90000000000001FC5
+t1405610697
+s8133
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_76.png
+c0000000053C7EAA70000000000002C2E
+t1405610663
+s11310
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_80.png
+c0000000053C7EAB20000000000002F70
+t1405610674
+s12144
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/sawtoothwave.jpg
+c0000000053C7EA18000000000000649E
+t1405610520
+s25758
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Icons/sawtoothwave.png
+c0000000053C7EA25000000000000CBE3
+t1405610533
+s52195
+
 N/Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.h
-c0000000053C57F800000000000000231
-t1405452160
-s561
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.m
 c0000000053C57F680000000000000838
@@ -533,9 +643,9 @@ t1405452136
 s2104
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.h
-c0000000053C06BA1000000000000287C
-t1405119393
-s10364
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.m
 c0000000053C57906000000000000D5D4
@@ -658,8 +768,8 @@ t1405462854
 s8414
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets
-c0000000053C021AA0000000000000088
-t1405100458
+c0000000053C7EB220000000000000088
+t1405610786
 s136
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist
@@ -678,8 +788,8 @@ t1405528517
 s2068
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m
-c0000000053C6AA160000000000009A41
-t1405528598
+c0000000053C7E8320000000000009A41
+t1405610034
 s39489
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/en.lproj/InfoPlist.strings
@@ -692,10 +802,40 @@ c0000000053C598C60000000000000158
 t1405458630
 s344
 
+N/Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.h
+c0000000053C40E26000000000000035A
+t1405357606
+s858
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m
+c0000000053C40F2F0000000000001B1D
+t1405357871
+s6941
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.h
+c0000000053C57F800000000000000231
+t1405452160
+s561
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m
+c0000000053C57F680000000000000838
+t1405452136
+s2104
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.h
+c0000000053C06BA1000000000000287C
+t1405119393
+s10364
+
+N/Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m
+c0000000053C57906000000000000D5D4
+t1405450502
+s54740
+
 N/Users/Jeff/Computering/Xcode/SoundSynth/WavetableSynth.h
-c0000000053C598FD00000000000005E2
-t1405458685
-s1506
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/Jeff/Computering/Xcode/SoundSynth/WavetableSynth.m
 c0000000053C5993100000000000012C2
@@ -708,6 +848,15 @@ t1386104990
 s28908
 
 CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.m
+r0
+
+CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m
+r0
+
+CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m
+r0
+
+CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m
 r0
 
 CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/AudioOutput.m
@@ -761,36 +910,51 @@ r0
 CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/main.m
 r0
 
+CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m
+r0
+
+CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m
+r0
+
+CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m
+r0
+
 CBuild AST from /Users/Jeff/Computering/Xcode/SoundSynth/WavetableSynth.m
 r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa3588697e176b941^dc9c8697e176b941^---0#1#1#--18"Check dependencies36"4DD8DB46-22FB-448D-848E-F29EDEB70354-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies6570b8cb2278b941^7ec7b8cb2278b941^---0#1#1#--18"Check dependencies36"CA97C04E-DE89-44F4-B7E4-C6A4A9939659-
 
 CCodeSign /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app
-s427221399.808490
-e427221400.001859
+s427303627.870985
+e427303628.027577
 r1
 xCodeSign
 x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"CodeSign DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app76"CodeSign DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.appb709cf97e176b941^4a7a0098e176b941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/0000000000000000^1123"CodeSign DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app    cd /Users/Jeff/Computering/Xcode/SoundSynth    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Jeff Gregorio (B5745LR2J5)" and provisioning profile "iOS Team Provisioning Profile: *" (1F271939-A99A-4586-A8A9-3B99D7B21BD6)    /usr/bin/codesign --force --sign 66A1BC3631F5F705AAE8FC326C53E875E6011B0E --resource-rules=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist --entitlements /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app36"2817BE64-4C07-4434-AFCE-534E57A0F5C9-
-bD0C02695-AF0B-4BEB-8C07-BC486703E17A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"CodeSign DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app76"CodeSign DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.appd107dfcb2278b941^231007cc2278b941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/0000000000000000^1123"CodeSign DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app    cd /Users/Jeff/Computering/Xcode/SoundSynth    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Jeff Gregorio (B5745LR2J5)" and provisioning profile "iOS Team Provisioning Profile: *" (1F271939-A99A-4586-A8A9-3B99D7B21BD6)    /usr/bin/codesign --force --sign 66A1BC3631F5F705AAE8FC326C53E875E6011B0E --resource-rules=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist --entitlements /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app36"EDE4AB16-07AA-456A-AD23-72D99ADCF433-
+b152091CC-9CC7-4A2A-8DE2-BA35C0CA0B6E
 
 CCompileAssetCatalog /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets
-s426878502.291533
-e426878503.714189
+s427303615.800537
+e427303616.909943
 r1
 xCompileAssetCatalog
 x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app
 x/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets
-o2014-07-12 13:21:43.127 IBCocoaTouchImageCatalogTool[14512:303] CFPreferences: user home directory at file:///Users/Jeff/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+o2014-07-17 11:26:56.673 IBCocoaTouchImageCatalogTool[52809:303] CFPreferences: user home directory at file:///Users/Jeff/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
 o/* com.apple.actool.compilation-results */
+o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon29x29~ipad.png
+o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon29x29@2x~ipad.png
+o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon40x40~ipad.png
+o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon40x40@2x~ipad.png
+o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon76x76~ipad.png
+o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon76x76@2x~ipad.png
 o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Assets.car
 o/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist
 o
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"CompileAssetCatalog DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app SoundSynth/Images.xcassets114"CompileAssetCatalog DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app SoundSynth/Images.xcassets25af4a26a671b941^6c92b727a671b941^-554"2014-07-12 13:21:43.127 IBCocoaTouchImageCatalogTool[14512:303] CFPreferences: user home directory at file:///Users/Jeff/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile./* com.apple.actool.compilation-results *//Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Assets.car/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@75"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets/0000000000000000^1175"CompileAssetCatalog DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app SoundSynth/Images.xcassets    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphoneos --minimum-deployment-target 7.1 --target-device ipad --compress-pngs --compile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets36"D33D8D68-2AA6-4C01-94B6-F9BCB705D48B-
-bF54ED9D9-C8AB-4154-80AD-AE239B92B570
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"CompileAssetCatalog DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app SoundSynth/Images.xcassets114"CompileAssetCatalog DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app SoundSynth/Images.xcassets0306cdbf2278b941^9df2e8c02278b941^-1349"2014-07-17 11:26:56.673 IBCocoaTouchImageCatalogTool[52809:303] CFPreferences: user home directory at file:///Users/Jeff/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile./* com.apple.actool.compilation-results *//Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon29x29~ipad.png/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon29x29@2x~ipad.png/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon40x40~ipad.png/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon40x40@2x~ipad.png/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon76x76~ipad.png/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/AppIcon76x76@2x~ipad.png/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Assets.car/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@75"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets/0000000000000000^1175"CompileAssetCatalog DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app SoundSynth/Images.xcassets    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphoneos --minimum-deployment-target 7.1 --target-device ipad --compress-pngs --compile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Images.xcassets36"82E68ED0-BF94-4A40-A492-306D1516DC73-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
 
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/arm64/AdditiveSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
@@ -865,6 +1029,22 @@ d/Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.m222"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o AdditiveSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerca5396b2d075b941^08e6b0b2d075b941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.m0000000000000000^3883"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o AdditiveSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o36"E7DD9053-0F2E-4BD8-B1EB-E9BF2C5FC662-
 b3AF33967-9E61-427B-894A-1AAE1DD8CC17
 
+CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s427303591.018693
+e427303591.919514
+r1
+xCompileC
+xDerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o
+x/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m228"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o Audio/AdditiveSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler6adf04a72278b941^1f66eba72278b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m0000000000000000^3895"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o Audio/AdditiveSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o36"B9C71430-43E1-4F16-802A-9D535E008E63-
+bD34DA835-4518-4725-8BA8-F6161182A2A0
+
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.o /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s426878097.715120
 e426878098.058111
@@ -880,6 +1060,22 @@ d/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/AppDelegate.m
 d/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/AppDelegate.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/AppDelegate.m229"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.o SoundSynth/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler7428b791a471b941^d09c1592a471b941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/AppDelegate.m0000000000000000^3893"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.o SoundSynth/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/AppDelegate.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.o36"9C85AFF9-94D7-4CC7-9992-78A4573A00F7-
 bE2021AA4-A6EC-4CC1-9BAB-9B669FDA5E8A
+
+CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s427303591.019760
+e427303591.989456
+r1
+xCompileC
+xDerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o
+x/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m224"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o Audio/AudioOutput.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler022d05a72278b941^9f5afda72278b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m0000000000000000^3883"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o Audio/AudioOutput.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o36"88FAF0AD-8C82-425E-82A7-5DDE717E77A5-
+bD34DA835-4518-4725-8BA8-F6161182A2A0
 
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o /Users/Jeff/Computering/Xcode/SoundSynth/AudioOutput.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s427143373.091640
@@ -913,6 +1109,22 @@ d/Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.m228"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o FunctionDrawView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler842e8df74674b941^44dd9ff74674b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.m0000000000000000^3901"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o FunctionDrawView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o36"3B62AE77-7F08-481E-AD56-93DD225B6251-
 b3279678E-090E-4BFA-BFCB-1A7C33262713
 
+CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o /Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s427303591.018464
+e427303591.989438
+r1
+xCompileC
+xDerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o
+x/Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m235"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o Visual/FunctionDrawView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler9acc04a72278b941^e751fda72278b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m0000000000000000^3915"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o Visual/FunctionDrawView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o36"8F0A869F-D7DC-4F5E-B397-64683BEB4B0F-
+bD34DA835-4518-4725-8BA8-F6161182A2A0
+
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o /Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s427144993.783812
 e427144993.876283
@@ -930,6 +1142,23 @@ d/Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.m220"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerfdbdc821b775b941^a855e021b775b941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.m0000000000000000^3877"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o36"D5CE1642-4250-4E7F-AD69-7547A56942E5-
 b4D5408FD-DEED-4BEF-BFEF-04556E939899
 
+CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o /Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s427303591.020004
+e427303592.089401
+r1
+xCompileC
+xDerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o
+x/Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m227"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o Visual/IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerb03b05a72278b941^f8fa16a82278b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m0000000000000000^3891"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o Visual/IndicatorDot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o36"AC1BCD9E-1926-4871-942F-08D409AEFC83-
+bD34DA835-4518-4725-8BA8-F6161182A2A0
+
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o /Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s427143373.088264
 e427143373.314383
@@ -945,6 +1174,22 @@ d/Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.m
 d/Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.m220"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler29ae16cdb075b941^fa7c50cdb075b941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.m0000000000000000^3877"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o36"981AD998-7925-42BC-A113-25CB2636BD5C-
 b5B82B79F-1310-445B-8165-25E03C428A10
+
+CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o /Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s427303591.015781
+e427303592.290622
+r1
+xCompileC
+xDerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o
+x/Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m227"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o Visual/METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler431f04a72278b941^41674aa82278b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m0000000000000000^3891"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o Visual/METScopeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o36"20576D8E-8BA2-438D-8699-8A067EAC7F98-
+bD34DA835-4518-4725-8BA8-F6161182A2A0
 
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVAllpassFilter.o /Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVAllpassFilter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s427051645.607301
@@ -1116,8 +1361,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile
 b32891D3F-4485-4845-A197-6A06B0754AA8
 
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s427221399.527035
-e427221399.706866
+s427303615.367056
+e427303615.557381
 r1
 xCompileC
 xDerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o
@@ -1128,16 +1373,34 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m
 d/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.h
-d/Users/Jeff/Computering/Xcode/SoundSynth/METScopeView.h
-d/Users/Jeff/Computering/Xcode/SoundSynth/AudioOutput.h
-d/Users/Jeff/Computering/Xcode/SoundSynth/AdditiveSynth.h
-d/Users/Jeff/Computering/Xcode/SoundSynth/WavetableSynth.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/METScopeView.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AudioOutput.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/AdditiveSynth.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.h
 d/Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVLowpassFilter.h
 d/Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/NVDSP.h
-d/Users/Jeff/Computering/Xcode/SoundSynth/IndicatorDot.h
-d/Users/Jeff/Computering/Xcode/SoundSynth/FunctionDrawView.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m235"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o SoundSynth/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilere3ff8697e176b941^baf7b497e176b941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m0000000000000000^3911"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o SoundSynth/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o36"3F5C506C-44B2-4C66-A223-7BD5FA4714AC-
-bD0C02695-AF0B-4BEB-8C07-BC486703E17A
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/IndicatorDot.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/Visual/FunctionDrawView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m235"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o SoundSynth/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler721a5ebf2278b941^03b38ebf2278b941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m0000000000000000^3911"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o SoundSynth/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/ViewController.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o36"E626516D-485C-49FD-862D-6083B6BB3479-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
+CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s427303627.723287
+e427303627.770664
+r1
+xCompileC
+xDerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o
+x/Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m
+d/Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/Filters/NVLowpassFilter.h
+d/Users/Jeff/Computering/Xcode/SoundSynth/NVDSP/NVDSP.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m230"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o Audio/WavetableSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerf23fb9cb2278b941^774cc5cb2278b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m0000000000000000^3901"CompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o Audio/WavetableSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeff/Computering/Xcode/SoundSynth    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-generated-files.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-own-target-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-all-target-headers.hmap -iquote /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth-project-headers.hmap -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources/armv7 -I/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/DerivedSources -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -include /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-dqfaesppocpimjfjrbohgalkrypq/SoundSynth-Prefix.pch -MMD -MT dependencies -MF /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.d --serialize-diagnostics /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.dia -c /Users/Jeff/Computering/Xcode/SoundSynth/Audio/WavetableSynth.m -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o36"5345A7A6-DD92-4A9C-A2B2-C95AC6221656-
+b152091CC-9CC7-4A2A-8DE2-BA35C0CA0B6E
 
 CCompileC DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o /Users/Jeff/Computering/Xcode/SoundSynth/WavetableSynth.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s427151538.586216
@@ -1241,6 +1504,76 @@ o2014-07-15 23:51:10.238 Interface Builder Cocoa Touch Tool[43789:303] CFPrefere
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"CompileStoryboard SoundSynth/Base.lproj/Main.storyboard55"CompileStoryboard SoundSynth/Base.lproj/Main.storyboarde5d5fd2b2e76b941^50a9562e2e76b941^-458"2014-07-15 23:51:09.379 Interface Builder Cocoa Touch Tool[43785:303] CFPreferences: user home directory at file:///Users/Jeff/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.2014-07-15 23:51:10.238 Interface Builder Cocoa Touch Tool[43789:303] CFPreferences: user home directory at file:///Users/Jeff/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#1#-19%DVTDocumentLocation2@85"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Base.lproj/Main.storyboard0000000000000000^818"CompileStoryboard SoundSynth/Base.lproj/Main.storyboard    cd /Users/Jeff/Computering/Xcode/SoundSynth    export IBSC_MINIMUM_COMPATIBILITY_VERSION=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.1 --output-format human-readable-text --compile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Base.lproj/Main.storyboardc /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/Base.lproj/Main.storyboard36"6FF1CC14-A253-4C55-AAB6-00C44A6A939F-
 bC6215E33-27CA-4CFE-8A52-5FF9001E7488
 
+CCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png Icons/icon_152.png
+s427303615.782697
+e427303615.830007
+r1
+xCopyPNGFile
+x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png
+xIcons/icon_152.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png Icons/icon_152.png111"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png Icons/icon_152.png3b72c8bf2278b941^5f7dd4bf2278b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_152.png0000000000000000^641"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png Icons/icon_152.png    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_152.png /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_152.png36"382100CA-6C8F-4CDA-8E2C-6027EC9F7E0E-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
+CCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png Icons/icon_29.png
+s427303615.781775
+e427303615.816561
+r1
+xCopyPNGFile
+x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png
+xIcons/icon_29.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png Icons/icon_29.png109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png Icons/icon_29.pngc230c8bf2278b941^fe0ad1bf2278b941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_29.png0000000000000000^637"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png Icons/icon_29.png    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_29.png /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_29.png36"52A9FAA4-42B6-4AEF-9C2E-CDEC72388486-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
+CCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png Icons/icon_40.png
+s427303615.782458
+e427303615.818570
+r1
+xCopyPNGFile
+x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png
+xIcons/icon_40.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png Icons/icon_40.png109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png Icons/icon_40.pngb665c8bf2278b941^40a2d1bf2278b941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_40.png0000000000000000^637"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png Icons/icon_40.png    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_40.png /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_40.png36"D9C89570-EDCB-44CB-BB33-8459F21FE593-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
+CCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png Icons/icon_58.png
+s427303615.783192
+e427303615.818480
+r1
+xCopyPNGFile
+x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png
+xIcons/icon_58.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png Icons/icon_58.png109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png Icons/icon_58.pngb5a3c8bf2278b941^529ad1bf2278b941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_58.png0000000000000000^637"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png Icons/icon_58.png    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_58.png /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_58.png36"A1EE9150-A689-48FA-A739-5213615BFC18-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
+CCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png Icons/icon_76.png
+s427303615.781976
+e427303615.818429
+r1
+xCopyPNGFile
+x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png
+xIcons/icon_76.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png Icons/icon_76.png109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png Icons/icon_76.pngd140c8bf2278b941^ad85d1bf2278b941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_76.png0000000000000000^637"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png Icons/icon_76.png    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_76.png /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_76.png36"F43C8F56-97FB-4E1F-98A1-DA45531A6095-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
+CCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png Icons/icon_80.png
+s427303615.783012
+e427303615.819835
+r1
+xCopyPNGFile
+x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png
+xIcons/icon_80.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png Icons/icon_80.png109"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png Icons/icon_80.pngeb8bc8bf2278b941^f8e0d1bf2278b941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_80.png0000000000000000^637"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png Icons/icon_80.png    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Jeff/Computering/Xcode/SoundSynth/Icons/icon_80.png /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/icon_80.png36"DB2CAE33-4675-453A-90ED-C3B57E473A55-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
+CCopyPNGFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png Icons/sawtoothwave.png
+s427303615.781440
+e427303615.852325
+r1
+xCopyPNGFile
+x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png
+xIcons/sawtoothwave.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png Icons/sawtoothwave.png119"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png Icons/sawtoothwave.png501cc8bf2278b941^d731dabf2278b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/Jeff/Computering/Xcode/SoundSynth/Icons/sawtoothwave.png0000000000000000^657"CopyPNGFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png Icons/sawtoothwave.png    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Jeff/Computering/Xcode/SoundSynth/Icons/sawtoothwave.png /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.png36"9BFFE59E-BF8B-4B03-B32A-B9DBEB7E55FA-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
 CCopyStringsFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/en.lproj/InfoPlist.strings SoundSynth/en.lproj/InfoPlist.strings
 s426878502.291117
 e426878502.313396
@@ -1261,18 +1594,28 @@ xDerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRul
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist220"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plista73c968fa471b941^f3ae968fa471b941^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist0034c0efddffdf42^800"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app36"B69DD9DD-9085-4224-A19C-F58D64CBB40A-
 bE2021AA4-A6EC-4CC1-9BAB-9B669FDA5E8A
 
+CCpResource Icons/sawtoothwave.jpg DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg
+s427303615.783507
+e427303615.800302
+r1
+xCpResource
+xIcons/sawtoothwave.jpg
+xDerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Copy DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg118"CpResource Icons/sawtoothwave.jpg DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg6ea4c8bf2278b941^f3e2ccbf2278b941^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg0034c0efddffdf42^640"CpResource Icons/sawtoothwave.jpg DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/sawtoothwave.jpg    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Jeff/Computering/Xcode/SoundSynth/Icons/sawtoothwave.jpg /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app36"DB89C53C-58E9-4AD2-B900-9253FB00755D-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
+
 CCreateUniversalBinary /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth normal armv7\ armv7s\ arm64
 r0
 
 CGenerateDSYMFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth
-s427221399.757109
-e427221399.807493
+s427303627.821843
+e427303627.869833
 r1
 xGenerateDSYMFile
 x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM
 x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generate /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM168"GenerateDSYMFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth09ddc197e176b941^4eb9ce97e176b941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM/0000000000000000^742"GenerateDSYMFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM36"5A32BC3E-74A3-4D27-9372-26E1B8A7979A-
-bD0C02695-AF0B-4BEB-8C07-BC486703E17A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generate /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM168"GenerateDSYMFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynthc170d2cb2278b941^d6addecb2278b941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM/0000000000000000^742"GenerateDSYMFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app.dSYM36"558F32E4-51F4-436B-81BC-33A89E920727-
+b152091CC-9CC7-4A2A-8DE2-BA35C0CA0B6E
 
 CLd /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/arm64/SoundSynth normal arm64
 r0
@@ -1284,8 +1627,8 @@ CLd /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Interm
 r0
 
 CLd /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth normal armv7
-s427221399.709966
-e427221399.755607
+s427303627.772800
+e427303627.819575
 r1
 xLd
 x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth
@@ -1294,22 +1637,22 @@ xarmv7
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/SoundSynth.LinkFileList
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVLowpassFilter.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVNotchFilter.o
-d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVHighShelvingFilter.o
+d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/ViewController.o
+d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o
+d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/METScopeView.o
+d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVAllpassFilter.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVBandpassFilter.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AppDelegate.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/main.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVDSP.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVPeakingEQFilter.o
-d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o
-d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/FunctionDrawView.o
-d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AdditiveSynth.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVBandpassQPeakGainFilter.o
+d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/WavetableSynth.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVLowShelvingFilter.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/AudioOutput.o
-d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/IndicatorDot.o
 d/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/NVHighpassFilter.o
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
@@ -1333,6 +1676,7 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
@@ -1362,25 +1706,24 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth94"Ld DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth normal armv789d3b597e176b941^fc6fc197e176b941^---0#0#1#--1467"Ld DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth normal armv7    cd /Users/Jeff/Computering/Xcode/SoundSynth    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -filelist /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/SoundSynth.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -stdlib=libc++ -miphoneos-version-min=7.1 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/SoundSynth_dependency_info.dat -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth36"82ADBAEE-5776-4D9C-9DBC-417B5DCF1864-
-bD0C02695-AF0B-4BEB-8C07-BC486703E17A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth94"Ld DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth normal armv73be5c5cb2278b941^85d0d1cb2278b941^---0#0#1#--1467"Ld DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth normal armv7    cd /Users/Jeff/Computering/Xcode/SoundSynth    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -F/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos -filelist /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/SoundSynth.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -stdlib=libc++ -miphoneos-version-min=7.1 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/Objects-normal/armv7/SoundSynth_dependency_info.dat -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/SoundSynth36"02628A5D-3FA1-4EF9-B5A6-7C5C10D408A6-
+b152091CC-9CC7-4A2A-8DE2-BA35C0CA0B6E
 
 CProcessInfoPlistFile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist
-s426878503.714710
-e426878503.716564
+s427303616.910412
+e427303616.912225
 r1
 xProcessInfoPlistFile
 x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist
 x/Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Process /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist132"ProcessInfoPlistFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist SoundSynth/SoundSynth-Info.plistaf07b727a671b941^b395b727a671b941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist0000000000000000^1117"ProcessInfoPlistFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist SoundSynth/SoundSynth-Info.plist    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist -genpkginfo /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist -additionalcontentfile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist36"4EAEE468-91F8-43FC-8F32-BC028D5BD09A-
-bF54ED9D9-C8AB-4154-80AD-AE239B92B570
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Process /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist132"ProcessInfoPlistFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist SoundSynth/SoundSynth-Info.plist7a1de9c02278b941^7f88e9c02278b941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist0000000000000000^1117"ProcessInfoPlistFile DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist SoundSynth/SoundSynth-Info.plist    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/Jeff/Computering/Xcode/SoundSynth/SoundSynth/SoundSynth-Info.plist -genpkginfo /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/ResourceRules.plist -additionalcontentfile /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/assetcatalog_generated_info.plist -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/Info.plist36"F27B041F-B0FE-41B0-85FA-201EA1BD8881-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
 
 CProcessPCH /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/PrecompiledHeaders/SoundSynth-Prefix-cqgxvfkovimxleamydxlxkqgsgyq/SoundSynth-Prefix.pch.pch SoundSynth/SoundSynth-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
@@ -1443,14 +1786,14 @@ CProcessPCH++ /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/In
 r0
 
 CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent
-s427055658.976606
-e427055658.977566
+s427303617.000942
+e427303617.001947
 r1
 xProcessProductPackaging
 x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
 x/Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection253"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent253"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent2c0ffa2a5a74b941^c042fa2a5a74b941^---0#0#1#-19%DVTDocumentLocation2@156"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent0000000000000000^826"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent36"62AC3877-815B-44D5-BCAF-322E24BC5F0E-
-bD08A6CD6-72CA-4565-BCAA-337EB8FBCDD7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection253"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent253"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent414a00c12278b941^418000c12278b941^---0#0#1#-19%DVTDocumentLocation2@156"file:///Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent0000000000000000^826"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent    cd /Users/Jeff/Computering/Xcode/SoundSynth    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Intermediates/SoundSynth.build/Debug-iphoneos/SoundSynth.build/SoundSynth.xcent36"8C1117CF-3FD5-41D0-9D6B-423E34EA3202-
+b2F5A2795-A3DA-434E-81C1-B0AAE16F1B34
 
 CProcessProductPackaging /Users/Jeff/Library/MobileDevice/Provisioning\ Profiles/1F271939-A99A-4586-A8A9-3B99D7B21BD6.mobileprovision /Users/Jeff/Computering/Xcode/SoundSynth/DerivedData/SoundSynth/Build/Products/Debug-iphoneos/SoundSynth.app/embedded.mobileprovision
 s426878503.759777

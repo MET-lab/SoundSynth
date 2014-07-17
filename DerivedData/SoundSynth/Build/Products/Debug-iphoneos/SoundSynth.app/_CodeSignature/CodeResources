@@ -4,9 +4,33 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon29x29@2x~ipad.png</key>
+		<data>
+		lJ+5HVyTCvbhZJZSJC9MOek8Uvc=
+		</data>
+		<key>AppIcon29x29~ipad.png</key>
+		<data>
+		mNQeDnMeG4Wuvbe73DriO/vWMMU=
+		</data>
+		<key>AppIcon40x40@2x~ipad.png</key>
+		<data>
+		hhag42QvlVkCfR4RmhCe/9EsAFc=
+		</data>
+		<key>AppIcon40x40~ipad.png</key>
+		<data>
+		IuMHkzs/0vcvJnkpEvoJm1DRP44=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		CJT2CiIIuGeKnxCbaSxiIK/SM80=
+		</data>
+		<key>AppIcon76x76~ipad.png</key>
+		<data>
+		yff+dODILu5rO/Q0O32TN6fTwuA=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		fFKJzSiAFM0Vy2TT4OKxcl2avt4=
+		mEttRh8ovCtJZ4FyOw4QTxEEzIw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
@@ -27,13 +51,69 @@
 		<key>en.lproj/InfoPlist.strings</key>
 		<data>
 		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>icon_152.png</key>
+		<data>
+		CJT2CiIIuGeKnxCbaSxiIK/SM80=
+		</data>
+		<key>icon_29.png</key>
+		<data>
+		mNQeDnMeG4Wuvbe73DriO/vWMMU=
+		</data>
+		<key>icon_40.png</key>
+		<data>
+		IuMHkzs/0vcvJnkpEvoJm1DRP44=
+		</data>
+		<key>icon_58.png</key>
+		<data>
+		lJ+5HVyTCvbhZJZSJC9MOek8Uvc=
+		</data>
+		<key>icon_76.png</key>
+		<data>
+		yff+dODILu5rO/Q0O32TN6fTwuA=
+		</data>
+		<key>icon_80.png</key>
+		<data>
+		hhag42QvlVkCfR4RmhCe/9EsAFc=
+		</data>
+		<key>sawtoothwave.jpg</key>
+		<data>
+		aPpKzVWSmACnWJypcLU9OHL/Lns=
+		</data>
+		<key>sawtoothwave.png</key>
+		<data>
+		Ivvq6ocM2pwY8zRvN40aTB9CU0k=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon29x29@2x~ipad.png</key>
+		<data>
+		lJ+5HVyTCvbhZJZSJC9MOek8Uvc=
+		</data>
+		<key>AppIcon29x29~ipad.png</key>
+		<data>
+		mNQeDnMeG4Wuvbe73DriO/vWMMU=
+		</data>
+		<key>AppIcon40x40@2x~ipad.png</key>
+		<data>
+		hhag42QvlVkCfR4RmhCe/9EsAFc=
+		</data>
+		<key>AppIcon40x40~ipad.png</key>
+		<data>
+		IuMHkzs/0vcvJnkpEvoJm1DRP44=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		CJT2CiIIuGeKnxCbaSxiIK/SM80=
+		</data>
+		<key>AppIcon76x76~ipad.png</key>
+		<data>
+		yff+dODILu5rO/Q0O32TN6fTwuA=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		fFKJzSiAFM0Vy2TT4OKxcl2avt4=
+		mEttRh8ovCtJZ4FyOw4QTxEEzIw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
@@ -54,6 +134,38 @@
 		<key>en.lproj/InfoPlist.strings</key>
 		<data>
 		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>icon_152.png</key>
+		<data>
+		CJT2CiIIuGeKnxCbaSxiIK/SM80=
+		</data>
+		<key>icon_29.png</key>
+		<data>
+		mNQeDnMeG4Wuvbe73DriO/vWMMU=
+		</data>
+		<key>icon_40.png</key>
+		<data>
+		IuMHkzs/0vcvJnkpEvoJm1DRP44=
+		</data>
+		<key>icon_58.png</key>
+		<data>
+		lJ+5HVyTCvbhZJZSJC9MOek8Uvc=
+		</data>
+		<key>icon_76.png</key>
+		<data>
+		yff+dODILu5rO/Q0O32TN6fTwuA=
+		</data>
+		<key>icon_80.png</key>
+		<data>
+		hhag42QvlVkCfR4RmhCe/9EsAFc=
+		</data>
+		<key>sawtoothwave.jpg</key>
+		<data>
+		aPpKzVWSmACnWJypcLU9OHL/Lns=
+		</data>
+		<key>sawtoothwave.png</key>
+		<data>
+		Ivvq6ocM2pwY8zRvN40aTB9CU0k=
 		</data>
 	</dict>
 	<key>rules</key>
